@@ -1,0 +1,11 @@
+#venv related
+venv
+/venv
+
+#python related
+__pycache__/
+*.pyc
+*.pyo
+
+#dataset because it is too big
+/datasets/IKEA-Dataset-master/

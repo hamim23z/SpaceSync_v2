@@ -212,12 +212,10 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 99303461,IVAR,Bookcases & shelving units,Shelv unit w table/cabinets/drawers,"Shelv unit w table/cabinets/drawers, 175x30-104x179 cm",369.33,1385.0,175.0,179.0,179.0,True,No,https://www.ikea.com/sa/en/p/ivar-shelv-unit-w-table-cabinets-drawers-pine-red-s99303461/
 70261131,GERSBY,Bookcases & shelving units,Bookcase,"Bookcase, 60x180 cm",25.33,95.0,60.0,24.0,180.0,False,No,https://www.ikea.com/sa/en/p/gersby-bookcase-white-70261131/
 20275814,KALLAX,Bookcases & shelving units,Shelving unit,"Shelving unit, 77x77 cm",30.67,115.0,77.0,39.0,77.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-white-20275814/
-60282186,LACK,Bookcases & shelving units,Wall shelf unit,"Wall shelf unit, 30x190 cm",53.07,199.0,30.0,28.0,190.0,False,Yes,https://www.ikea.com/sa/en/p/lack-wall-shelf-unit-white-60282186/
 278578,HYLLIS,Bookcases & shelving units,Shelving unit,"Shelving unit, 60x27x140 cm",15.73,59.0,60.0,27.0,140.0,False,No,https://www.ikea.com/sa/en/p/hyllis-shelving-unit-in-outdoor-galvanised-00278578/
 80275887,KALLAX,Bookcases & shelving units,Shelving unit,"Shelving unit, 77x147 cm",66.67,250.0,77.0,39.0,147.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-white-80275887/
 50419972,JONAXEL,Bookcases & shelving units,Shelving unit,"Shelving unit, 80x38x160 cm",46.67,175.0,80.0,38.0,160.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-shelving-unit-white-50419972/
 30428326,HYLLIS,Bookcases & shelving units,Shelving unit,"Shelving unit, 60x27x74 cm",10.4,39.0,60.0,27.0,74.0,False,No,https://www.ikea.com/sa/en/p/hyllis-shelving-unit-in-outdoor-30428326/
-90282180,LACK,Bookcases & shelving units,Wall shelf,"Wall shelf, 110x26 cm",10.4,39.0,110.0,26.0,,True,Yes,https://www.ikea.com/sa/en/p/lack-wall-shelf-white-90282180/
 40178591,LAIVA,Bookcases & shelving units,Bookcase,"Bookcase, 62x165 cm",22.67,85.0,62.0,24.0,165.0,False,No,https://www.ikea.com/sa/en/p/laiva-bookcase-black-brown-40178591/
 40322876,SVALNÄS,Bookcases & shelving units,Desk space with 2 drawers,"Desk space with 2 drawers, 81x35 cm",72.0,270.0,81.0,35.0,,False,No,https://www.ikea.com/sa/en/p/svalnaes-desk-space-with-2-drawers-bamboo-40322876/
 90305803,VITTSJÖ,Bookcases & shelving units,Shelving unit,"Shelving unit, 100x93 cm",65.33,245.0,100.0,36.0,93.0,False,No,https://www.ikea.com/sa/en/p/vittsjoe-shelving-unit-black-brown-glass-90305803/
@@ -236,10 +234,7 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 80263832,BILLY,Bookcases & shelving units,Bookcase,"Bookcase, 40x28x106 cm",25.33,95.0,40.0,28.0,106.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-white-80263832/
 19189030,EKET,Bookcases & shelving units,Wall-mounted cabinet combination,"Wall-mounted cabinet combination, 80x35x210 cm",174.93,656.0,80.0,35.0,210.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-cabinet-combination-white-s19189030/
 69155853,BILLY,Bookcases & shelving units,Bookcase,"Bookcase, 215/135x28x237 cm",402.67,1510.0,280.0,28.0,237.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-brown-ash-veneer-s69155853/
-50282182,LACK,Bookcases & shelving units,Wall shelf,"Wall shelf, 190x26 cm",26.4,99.0,190.0,26.0,,True,Yes,https://www.ikea.com/sa/en/p/lack-wall-shelf-white-50282182/
 30334605,EKET,Bookcases & shelving units,Cabinet w 2 doors and 2 shelves,"Cabinet w 2 doors and 2 shelves, 70x25x70 cm",58.67,220.0,70.0,25.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-w-2-doors-and-2-shelves-white-30334605/
-40277143,GNEDBY,Bookcases & shelving units,Shelving unit,"Shelving unit, 202 cm",33.33,125.0,20.0,17.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/gnedby-shelving-unit-white-40277143/
-50282177,LACK,Bookcases & shelving units,Wall shelf,"Wall shelf, 30x26 cm",5.07,19.0,30.0,26.0,5.0,True,Yes,https://www.ikea.com/sa/en/p/lack-wall-shelf-white-50282177/
 319135,IVAR,Bookcases & shelving units,Storage unit with foldable table,"Storage unit with foldable table, 80x30-104x155 cm",152.0,570.0,80.0,30.0,155.0,False,No,https://www.ikea.com/sa/en/p/ivar-storage-unit-with-foldable-table-pine-00319135/
 79286434,EKET,Bookcases & shelving units,Cabinet combination with legs,"Cabinet combination with legs, 140x35x80 cm",165.33,620.0,140.0,35.0,80.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-combination-with-legs-golden-brown-s79286434/
 69281804,BILLY / OXBERG,Bookcases & shelving units,Bookcase with glass-doors,"Bookcase with glass-doors, 120x30x202 cm",244.0,915.0,120.0,30.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/billy-oxberg-bookcase-with-glass-doors-white-s69281804/
@@ -252,7 +247,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 70301542,KALLAX,Bookcases & shelving units,Shelving unit,"Shelving unit, 182x182 cm",193.33,725.0,182.0,39.0,182.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-black-brown-70301542/
 69017828,BILLY / OXBERG,Bookcases & shelving units,Bookcase,"Bookcase, 80x30x202 cm",153.33,575.0,80.0,30.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/billy-oxberg-bookcase-white-s69017828/
 19286390,EKET,Bookcases & shelving units,Wall-mounted storage combination,"Wall-mounted storage combination, 70x25x175 cm",106.67,400.0,70.0,25.0,175.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-storage-combination-light-grey-dark-grey-red-s19286390/
-9305087,JONAXEL,Bookcases & shelving units,Frame/wire baskets/top shelf,"Frame/wire baskets/top shelf, 25x51x70 cm",36.0,135.0,25.0,51.0,70.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-wire-baskets-top-shelf-s09305087/
 79902657,VITTSJÖ,Bookcases & shelving units,Shelving unit with laptop table,"Shelving unit with laptop table, 200x36x175 cm",147.73,554.0,200.0,36.0,,False,No,https://www.ikea.com/sa/en/p/vittsjoe-shelving-unit-with-laptop-table-black-brown-glass-s79902657/
 79302721,BESTÅ,Bookcases & shelving units,Storage combination with doors,"Storage combination with doors, 120x42x74 cm",245.33,920.0,120.0,42.0,74.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-with-doors-black-brown-riksviken-nannarp-light-bronze-effect-s79302721/
 70342199,FJÄLLBO,Bookcases & shelving units,Shelving unit,"Shelving unit, 51x136 cm",78.67,295.0,51.0,36.0,136.0,False,No,https://www.ikea.com/sa/en/p/fjaellbo-shelving-unit-black-70342199/
@@ -266,31 +260,25 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 9197436,KALLAX,Bookcases & shelving units,Shelving unit with doors,"Shelving unit with doors, 77x147 cm",120.0,450.0,77.0,39.0,147.0,False,No,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-doors-white-s09197436/
 99286838,BESTÅ / EKET,Bookcases & shelving units,Cabinet combination for TV,"Cabinet combination for TV, 210x40x220 cm",458.4,1719.0,210.0,40.0,220.0,False,Yes,https://www.ikea.com/sa/en/p/besta-eket-cabinet-combination-for-tv-white-light-grey-dark-grey-golden-brown-s99286838/
 20417205,STUK,Bookcases & shelving units,Storage case,"Storage case, 55x51x18 cm",9.33,35.0,55.0,51.0,18.0,False,No,https://www.ikea.com/sa/en/p/stuk-storage-case-pink-20417205/
-60419962,JONAXEL,Bookcases & shelving units,Wire basket,"Wire basket, 25x51x15 cm",4.0,15.0,25.0,51.0,15.0,False,Yes,https://www.ikea.com/sa/en/p/jonaxel-wire-basket-white-60419962/
 20409936,KALLAX,Bookcases & shelving units,Shelving unit,"Shelving unit, 112x147 cm",105.33,395.0,112.0,39.0,147.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-black-brown-20409936/
 90301225,BRIMNES,Bookcases & shelving units,Bookcase,"Bookcase, 60x190 cm",118.67,445.0,60.0,35.0,190.0,False,Yes,https://www.ikea.com/sa/en/p/brimnes-bookcase-white-90301225/
-20323358,BILLY,Bookcases & shelving units,Extra shelf,"Extra shelf, 76x26 cm",13.33,50.0,76.0,26.0,,False,Yes,https://www.ikea.com/sa/en/p/billy-extra-shelf-brown-ash-veneer-20323358/
 60364295,OLAUS,Bookcases & shelving units,Shelving unit,"Shelving unit, 92x36x94 cm",38.67,145.0,92.0,36.0,94.0,False,No,https://www.ikea.com/sa/en/p/olaus-shelving-unit-galvanised-60364295/
 9017826,BILLY,Bookcases & shelving units,Bookcase,"Bookcase, 240x28x106 cm",92.0,345.0,240.0,28.0,106.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-white-s09017826/
 69251345,IVAR,Bookcases & shelving units,Shelving unit,"Shelving unit, 89x50x179 cm",112.0,420.0,89.0,50.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-pine-s69251345/
 79306875,EKET,Bookcases & shelving units,Cabinet combination with feet,"Cabinet combination with feet, 70x35x72 cm",66.67,250.0,70.0,35.0,72.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-combination-with-feet-white-stained-oak-effect-s79306875/
 30409295,KOLBJÖRN,Bookcases & shelving units,Cabinet in/outdoor,"Cabinet in/outdoor, 80x81 cm",92.0,345.0,80.0,35.0,81.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-cabinet-in-outdoor-beige-30409295/
-60295706,MOSTORP,Bookcases & shelving units,Wall shelf,"Wall shelf, 160x27 cm",111.2,417.0,160.0,27.0,27.0,False,Yes,https://www.ikea.com/sa/en/p/mostorp-wall-shelf-beige-high-gloss-beige-60295706/
 80385616,BILLY,Bookcases & shelving units,Bookcase with glass-doors,"Bookcase with glass-doors, 80x30x202 cm",137.6,516.0,80.0,30.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-with-glass-doors-dark-red-80385616/
 69281776,BILLY,Bookcases & shelving units,Bookcase with panel/glass doors,"Bookcase with panel/glass doors, 80x30x202 cm",156.0,585.0,80.0,30.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-with-panel-glass-doors-white-s69281776/
 70339291,FJÄLLBO,Bookcases & shelving units,Shelving unit,"Shelving unit, 100x136 cm",132.0,495.0,100.0,36.0,136.0,False,No,https://www.ikea.com/sa/en/p/fjaellbo-shelving-unit-black-70339291/
 20345633,KOLBJÖRN,Bookcases & shelving units,Cabinet in/outdoor,"Cabinet in/outdoor, 90x161 cm",185.33,695.0,90.0,35.0,161.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-cabinet-in-outdoor-beige-20345633/
 89248205,IVAR,Bookcases & shelving units,Cabinet with doors,"Cabinet with doors, 89x30x124 cm",117.33,440.0,89.0,30.0,124.0,False,No,https://www.ikea.com/sa/en/p/ivar-cabinet-with-doors-pine-white-s89248205/
 99294560,VITTSJÖ,Bookcases & shelving units,TV storage combination,"TV storage combination, 202x36x175 cm",185.33,695.0,202.0,36.0,175.0,False,No,https://www.ikea.com/sa/en/p/vittsjoe-tv-storage-combination-black-brown-glass-s99294560/
-40347886,EDVALLA,Bookcases & shelving units,Drop handle,"Drop handle, 18 mm",6.67,25.0,33.0,11.0,,False,No,https://www.ikea.com/sa/en/p/edvalla-drop-handle-brass-colour-40347886/
 79017837,BILLY,Bookcases & shelving units,Bookcase,"Bookcase, 160x28x202 cm",98.67,370.0,160.0,28.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-white-s79017837/
-79305098,JONAXEL,Bookcases & shelving units,Frame/wire baskets/top shelf,"Frame/wire baskets/top shelf, 50x51x70 cm",48.0,180.0,50.0,51.0,70.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-wire-baskets-top-shelf-s79305098/
 79278250,KALLAX,Bookcases & shelving units,Shelving unit with 4 inserts,"Shelving unit with 4 inserts, 147x112 cm",158.67,595.0,147.0,39.0,112.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-4-inserts-white-s79278250/
 89286382,EKET,Bookcases & shelving units,Wall-mounted cabinet combination,"Wall-mounted cabinet combination, 175x25x70 cm",170.67,640.0,175.0,25.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-cabinet-combination-white-white-stained-oak-effect-s89286382/
 10275862,KALLAX,Bookcases & shelving units,Shelving unit,"Shelving unit, 147x147 cm",132.0,495.0,147.0,39.0,147.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-black-brown-10275862/
 69190861,EKET,Bookcases & shelving units,Cabinet combination with feet,"Cabinet combination with feet, 105x35x107 cm",116.0,435.0,105.0,35.0,107.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-combination-with-feet-dark-grey-s69190861/
 9189484,EKET,Bookcases & shelving units,Wall-mounted cabinet combination,"Wall-mounted cabinet combination, 105x35x70 cm",260.8,978.0,105.0,35.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-cabinet-combination-white-s09189484/
-10218517,ALGOT,Bookcases & shelving units,Mesh basket,"Mesh basket, 38x60x14 cm",4.8,18.0,38.0,60.0,14.0,False,Yes,https://www.ikea.com/sa/en/p/algot-mesh-basket-white-10218517/
 9279050,OLAUS,Bookcases & shelving units,2 shelf sections,"2 shelf sections, 197x36x181 cm",205.87,772.0,197.0,36.0,181.0,False,No,https://www.ikea.com/sa/en/p/olaus-2-shelf-sections-s09279050/
 79278269,KALLAX,Bookcases & shelving units,Shelving unit with doors,"Shelving unit with doors, 77x77 cm",57.33,215.0,77.0,39.0,77.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-doors-black-brown-s79278269/
 99277122,BILLY / BOTTNA,Bookcases & shelving units,Bookcase with display shelf,"Bookcase with display shelf, 40x28x106 cm",37.33,140.0,40.0,28.0,106.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bottna-bookcase-with-display-shelf-white-beige-s99277122/
@@ -331,7 +319,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 70245952,BESTÅ,Bookcases & shelving units,Frame,"Frame, 120x40x38 cm",45.33,170.0,120.0,40.0,38.0,False,Yes,https://www.ikea.com/sa/en/p/besta-frame-black-brown-70245952/
 89317557,KOLBJÖRN,Bookcases & shelving units,Shelving unit with cabinet,"Shelving unit with cabinet, 80x37x161 cm",152.0,570.0,80.0,37.0,161.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-shelving-unit-with-cabinet-green-s89317557/
 20333951,EKET,Bookcases & shelving units,Cabinet w 2 doors and 1 shelf,"Cabinet w 2 doors and 1 shelf, 70x35x70 cm",62.93,236.0,70.0,35.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-w-2-doors-and-1-shelf-white-20333951/
-20419964,JONAXEL,Bookcases & shelving units,Mesh basket,"Mesh basket, 50x51x15 cm",6.67,25.0,50.0,51.0,15.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-mesh-basket-white-20419964/
 9184448,SVALNÄS,Bookcases & shelving units,Wall-mounted workspace combination,"Wall-mounted workspace combination, 86x35x176 cm",165.33,620.0,86.0,35.0,176.0,False,No,https://www.ikea.com/sa/en/p/svalnaes-wall-mounted-workspace-combination-bamboo-s09184448/
 99902661,VITTSJÖ,Bookcases & shelving units,Shelving unit with laptop table,"Shelving unit with laptop table, 202x36x175 cm",162.4,609.0,202.0,36.0,,False,No,https://www.ikea.com/sa/en/p/vittsjoe-shelving-unit-with-laptop-table-black-brown-glass-s99902661/
 99020476,BILLY / GNEDBY,Bookcases & shelving units,Bookcase,"Bookcase, 200x28x202 cm",250.67,940.0,200.0,28.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/billy-gnedby-bookcase-black-brown-s99020476/
@@ -352,7 +339,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49061228,BESTÅ,Bookcases & shelving units,TV bench,"TV bench, 120x40x48 cm",136.0,510.0,120.0,40.0,48.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-black-brown-s49061228/
 59248551,IVAR,Bookcases & shelving units,1 sec/storage unit w foldable table,"1 sec/storage unit w foldable table, 89x30-104x179 cm",206.67,775.0,89.0,179.0,179.0,True,No,https://www.ikea.com/sa/en/p/ivar-1-sec-storage-unit-w-foldable-table-s59248551/
 19291650,KOLBJÖRN,Bookcases & shelving units,Shelving unit with 2 cabinets,"Shelving unit with 2 cabinets, 171x37x161 cm",337.33,1265.0,171.0,37.0,161.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-shelving-unit-with-2-cabinets-beige-s19291650/
-90419965,JONAXEL,Bookcases & shelving units,Mesh basket,"Mesh basket, 25x51x15 cm",5.33,20.0,25.0,51.0,15.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-mesh-basket-white-90419965/
 59282998,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 85x55x190 cm",154.67,580.0,85.0,55.0,190.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-black-s59282998/
 70344933,EKET,Bookcases & shelving units,Cabinet with 3 drawers,"Cabinet with 3 drawers, 70x35x70 cm",166.67,625.0,70.0,35.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-with-3-drawers-dark-grey-70344933/
 29205534,BESTÅ,Bookcases & shelving units,Storage combination with doors,"Storage combination with doors, 120x40x192 cm",288.27,1081.0,120.0,40.0,192.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-with-doors-grey-stained-walnut-effect-lappviken-light-grey-s29205534/
@@ -361,16 +347,11 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 19291645,KOLBJÖRN,Bookcases & shelving units,Shelving unit with cabinet,"Shelving unit with cabinet, 80x37x161 cm",152.0,570.0,80.0,37.0,161.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-shelving-unit-with-cabinet-beige-s19291645/
 89297130,JONAXEL,Bookcases & shelving units,Frame with wire baskets,"Frame with wire baskets, 25x51x70 cm",30.67,115.0,25.0,51.0,70.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-with-wire-baskets-s89297130/
 450352,IVAR,Bookcases & shelving units,Cabinet with doors,"Cabinet with doors, 80x83 cm",92.0,345.0,80.0,30.0,83.0,False,No,https://www.ikea.com/sa/en/p/ivar-cabinet-with-doors-red-00450352/
-347888,EDVALLA,Bookcases & shelving units,Drop handle,"Drop handle, 18 mm",6.67,25.0,33.0,11.0,,False,No,https://www.ikea.com/sa/en/p/edvalla-drop-handle-black-00347888/
 49297491,JONAXEL,Bookcases & shelving units,Frame with mesh baskets/castors,"Frame with mesh baskets/castors, 50x51x73 cm",52.0,195.0,50.0,51.0,73.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-with-mesh-baskets-castors-s49297491/
-59317554,JONAXEL,Bookcases & shelving units,Frame/wire baskets/clothes rails,"Frame/wire baskets/clothes rails, 142-178x51x139 cm",137.33,515.0,178.0,51.0,139.0,True,No,https://www.ikea.com/sa/en/p/jonaxel-frame-wire-baskets-clothes-rails-s59317554/
-20218545,ALGOT,Bookcases & shelving units,Bracket,"Bracket, 38 cm",2.4,9.0,2.0,38.0,,False,Yes,https://www.ikea.com/sa/en/p/algot-bracket-white-20218545/
-60295532,BESTÅ,Bookcases & shelving units,Glass shelf,"Glass shelf, 56x36 cm",8.0,30.0,56.0,36.0,,False,No,https://www.ikea.com/sa/en/p/besta-glass-shelf-glass-60295532/
 49286341,EKET,Bookcases & shelving units,Wall-mounted cabinet combination,"Wall-mounted cabinet combination, 105x35x70 cm",71.47,268.0,105.0,35.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-cabinet-combination-golden-brown-dark-grey-s49286341/
 49301921,BESTÅ,Bookcases & shelving units,Storage combination w glass doors,"Storage combination w glass doors, 60x22x202 cm",308.0,1155.0,60.0,22.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-w-glass-doors-black-brown-glassvik-stallarp-dark-red-brown-clear-glass-s49301921/
 99286862,BESTÅ / EKET,Bookcases & shelving units,Cabinet combination for TV,"Cabinet combination for TV, 300x42x210 cm",420.8,1578.0,300.0,42.0,210.0,False,Yes,https://www.ikea.com/sa/en/p/besta-eket-cabinet-combination-for-tv-white-light-grey-dark-grey-s99286862/
 59248320,IVAR,Bookcases & shelving units,1 section/shelves,"1 section/shelves, 89x50x179 cm",98.93,371.0,89.0,50.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-1-section-shelves-pine-s59248320/
-335885,SKÅDIS,Bookcases & shelving units,Connector for ALGOT,Connector for ALGOT,1.6,6.0,5.0,2.0,4.0,False,No,https://www.ikea.com/sa/en/p/skadis-connector-for-algot-white-00335885/
 70391038,HAVSTA,Bookcases & shelving units,Shelving unit with plinth,"Shelving unit with plinth, 61x37x212 cm",185.33,695.0,61.0,37.0,212.0,False,Yes,https://www.ikea.com/sa/en/p/havsta-shelving-unit-with-plinth-dark-brown-70391038/
 89272709,BROR,Bookcases & shelving units,Shelving unit with cabinets,"Shelving unit with cabinets, 170x40x190 cm",456.0,1710.0,170.0,40.0,190.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-with-cabinets-black-s89272709/
 9177626,BILLY,Bookcases & shelving units,Bookcase,"Bookcase, 40x28x237 cm",81.33,305.0,40.0,28.0,237.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bookcase-brown-ash-veneer-s09177626/
@@ -384,7 +365,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 99248554,IVAR,Bookcases & shelving units,2 sec/storage unit w foldable table,"2 sec/storage unit w foldable table, 134x30-104x226 cm",272.0,1020.0,134.0,226.0,226.0,True,No,https://www.ikea.com/sa/en/p/ivar-2-sec-storage-unit-w-foldable-table-s99248554/
 29278262,KALLAX,Bookcases & shelving units,Shelving unit with 6 inserts,"Shelving unit with 6 inserts, 112x147 cm",198.67,745.0,112.0,39.0,147.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-6-inserts-white-s29278262/
 79286636,EKET,Bookcases & shelving units,Cabinet combination with legs,"Cabinet combination with legs, 210x35x210 cm",538.67,2020.0,210.0,35.0,210.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-combination-with-legs-white-white-stained-oak-effect-light-grey-dark-grey-s79286636/
-10434187,ALGOT,Bookcases & shelving units,Bracket,"Bracket, 38 cm",2.4,9.0,2.0,38.0,,False,No,https://www.ikea.com/sa/en/p/algot-bracket-black-10434187/
 60409294,KOLBJÖRN,Bookcases & shelving units,Shelving unit in/outdoor,"Shelving unit in/outdoor, 80x81 cm",60.0,225.0,80.0,35.0,81.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-shelving-unit-in-outdoor-beige-60409294/
 19297138,JONAXEL,Bookcases & shelving units,Frame with wire baskets,"Frame with wire baskets, 50x51x104 cm",53.33,200.0,50.0,51.0,104.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-with-wire-baskets-s19297138/
 50373709,EKET,Bookcases & shelving units,Cabinet,"Cabinet, 35x35x35 cm",21.07,79.0,35.0,35.0,35.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-golden-brown-50373709/
@@ -397,7 +377,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 323359,BILLY,Bookcases & shelving units,Height extension unit,"Height extension unit, 40x28x35 cm",21.33,80.0,40.0,28.0,35.0,False,Yes,https://www.ikea.com/sa/en/p/billy-height-extension-unit-brown-ash-veneer-00323359/
 80294503,BESTÅ,Bookcases & shelving units,TV bench,"TV bench, 120x40x38 cm",100.0,375.0,120.0,40.0,38.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-white-80294503/
 39272641,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 65x40x110 cm",92.0,345.0,65.0,40.0,110.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-black-s39272641/
-10265293,BILLY,Bookcases & shelving units,Extra shelf,"Extra shelf, 36x26 cm",8.0,30.0,36.0,26.0,,False,Yes,https://www.ikea.com/sa/en/p/billy-extra-shelf-white-10265293/
 20245959,BESTÅ,Bookcases & shelving units,Frame,"Frame, 60x20x64 cm",29.33,110.0,60.0,20.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/besta-frame-black-brown-20245959/
 9248544,IVAR,Bookcases & shelving units,4 sections/shelves,"4 sections/shelves, 344x30x226 cm",308.0,1155.0,344.0,30.0,226.0,False,No,https://www.ikea.com/sa/en/p/ivar-4-sections-shelves-pine-s09248544/
 60371762,HEMNES,Bookcases & shelving units,Bookcase,"Bookcase, 49x197 cm",148.27,556.0,49.0,37.0,197.0,False,Yes,https://www.ikea.com/sa/en/p/hemnes-bookcase-black-brown-60371762/
@@ -412,11 +391,9 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49285817,EKET,Bookcases & shelving units,Wall-mounted shelving unit,"Wall-mounted shelving unit, 35x35x35 cm",25.07,94.0,35.0,35.0,35.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-shelving-unit-white-s49285817/
 40299885,BESTÅ,Bookcases & shelving units,TV bench,"TV bench, 120x40x64 cm",126.67,475.0,120.0,40.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-black-brown-40299885/
 9017831,BILLY / MORLIDEN,Bookcases & shelving units,Bookcase,"Bookcase, 200x30x106 cm",246.67,925.0,200.0,30.0,106.0,False,Yes,https://www.ikea.com/sa/en/p/billy-morliden-bookcase-white-s09017831/
-10422325,IVAR,Bookcases & shelving units,Clothes rail,"Clothes rail, 83x50 cm",12.0,45.0,83.0,50.0,,True,No,https://www.ikea.com/sa/en/p/ivar-clothes-rail-10422325/
 19282924,BESTÅ,Bookcases & shelving units,Storage combination w glass doors,"Storage combination w glass doors, 120x40x128 cm",418.67,1570.0,120.0,40.0,128.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-w-glass-doors-grey-stained-walnut-effect-vassviken-white-clear-glass-s19282924/
 99217755,BILLY / OXBERG,Bookcases & shelving units,Bookcase,"Bookcase, 80x30x237 cm",265.33,995.0,80.0,30.0,237.0,False,Yes,https://www.ikea.com/sa/en/p/billy-oxberg-bookcase-black-brown-s99217755/
 69184431,SVALNÄS,Bookcases & shelving units,Wall-mounted shelf combination,"Wall-mounted shelf combination, 86x25x176 cm",120.0,450.0,86.0,25.0,176.0,False,No,https://www.ikea.com/sa/en/p/svalnaes-wall-mounted-shelf-combination-bamboo-s69184431/
-408297,BOTTNA,Bookcases & shelving units,Display shelf,"Display shelf, 36x32 cm",12.0,45.0,36.0,32.0,32.0,True,No,https://www.ikea.com/sa/en/p/bottna-display-shelf-light-beige-00408297/
 39291748,HYLLIS,Bookcases & shelving units,Shelving units with covers,"Shelving units with covers, 180x27x74-140 cm",49.6,186.0,180.0,27.0,,False,No,https://www.ikea.com/sa/en/p/hyllis-shelving-units-with-covers-transparent-s39291748/
 89277113,BILLY / BOTTNA,Bookcases & shelving units,Bookcase with display shelf,"Bookcase with display shelf, 80x28x106 cm",65.33,245.0,80.0,28.0,106.0,False,Yes,https://www.ikea.com/sa/en/p/billy-bottna-bookcase-with-display-shelf-white-beige-s89277113/
 19030592,KALLAX,Bookcases & shelving units,Shelving unit with 8 inserts,"Shelving unit with 8 inserts, 147x147 cm",164.0,615.0,147.0,39.0,147.0,False,No,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-8-inserts-black-brown-s19030592/
@@ -438,7 +415,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 69248348,IVAR,Bookcases & shelving units,2 sections/shelves,"2 sections/shelves, 174x30x124 cm",93.33,350.0,174.0,30.0,124.0,False,No,https://www.ikea.com/sa/en/p/ivar-2-sections-shelves-pine-s69248348/
 9297657,JONAXEL,Bookcases & shelving units,Shelving unit with clothes rail,"Shelving unit with clothes rail, 99x51x173 cm",104.0,390.0,99.0,51.0,173.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-shelving-unit-with-clothes-rail-s09297657/
 49280749,BILLY / OXBERG,Bookcases & shelving units,Bookcase w height extension ut/drs,"Bookcase w height extension ut/drs, 160x30x237 cm",477.33,1790.0,160.0,30.0,237.0,False,Yes,https://www.ikea.com/sa/en/p/billy-oxberg-bookcase-w-height-extension-ut-drs-black-brown-s49280749/
-49297660,JONAXEL,Bookcases & shelving units,Frame/wire baskets/clothes rails,"Frame/wire baskets/clothes rails, 99x51x173 cm",130.67,490.0,99.0,51.0,173.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-wire-baskets-clothes-rails-s49297660/
 49298594,BESTÅ,Bookcases & shelving units,TV bench,"TV bench, 180x42x39 cm",264.0,990.0,180.0,42.0,39.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-black-brown-selsviken-high-gloss-dark-red-brown-s49298594/
 59177624,BILLY / OXBERG,Bookcases & shelving units,Bookcase,"Bookcase, 120x30x237 cm",462.67,1735.0,120.0,30.0,237.0,False,Yes,https://www.ikea.com/sa/en/p/billy-oxberg-bookcase-brown-ash-veneer-s59177624/
 79297526,BESTÅ,Bookcases & shelving units,TV bench with doors and drawers,"TV bench with doors and drawers, 240x42x74 cm",432.0,1620.0,240.0,42.0,74.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-with-doors-and-drawers-black-brown-hanviken-stubbarp-black-brown-s79297526/
@@ -446,7 +422,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 99046443,LIATORP,Bookcases & shelving units,Storage combination,"Storage combination, 276x214 cm",916.0,3435.0,276.0,38.0,214.0,False,No,https://www.ikea.com/sa/en/p/liatorp-storage-combination-white-s99046443/
 60333850,BROR,Bookcases & shelving units,Trolley,"Trolley, 85x55 cm",132.0,495.0,55.0,55.0,88.0,True,No,https://www.ikea.com/sa/en/p/bror-trolley-black-pine-plywood-60333850/
 39272655,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 85x55x110 cm",100.0,375.0,85.0,55.0,110.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-black-s39272655/
-40401859,ALGOT,Bookcases & shelving units,Pull-out rail for baskets,Pull-out rail for baskets,2.67,10.0,1.0,40.0,,False,No,https://www.ikea.com/sa/en/p/algot-pull-out-rail-for-baskets-white-40401859/
 30247378,BESTÅ,Bookcases & shelving units,Frame,"Frame, 60x40x38 cm",33.33,125.0,60.0,40.0,38.0,False,Yes,https://www.ikea.com/sa/en/p/besta-frame-grey-stained-walnut-effect-30247378/
 80247371,BESTÅ,Bookcases & shelving units,Frame,"Frame, 60x40x192 cm",60.0,225.0,60.0,40.0,192.0,False,Yes,https://www.ikea.com/sa/en/p/besta-frame-grey-stained-walnut-effect-80247371/
 73755709,IVAR,Bookcases & shelving units,Side unit,"Side unit, 30x124 cm",12.0,45.0,30.0,124.0,124.0,True,Yes,https://www.ikea.com/sa/en/p/ivar-side-unit-73755709/
@@ -467,11 +442,8 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49275088,HAVSTA,Bookcases & shelving units,Shelving unit with plinth,"Shelving unit with plinth, 81x37x134 cm",166.67,625.0,81.0,37.0,134.0,False,Yes,https://www.ikea.com/sa/en/p/havsta-shelving-unit-with-plinth-grey-s49275088/
 59184441,SVALNÄS,Bookcases & shelving units,Wall-mounted storage combination,"Wall-mounted storage combination, 297x35x176 cm",694.67,2605.0,297.0,35.0,176.0,False,No,https://www.ikea.com/sa/en/p/svalnaes-wall-mounted-storage-combination-bamboo-white-s59184441/
 70299879,BESTÅ,Bookcases & shelving units,TV bench,"TV bench, 180x40x64 cm",158.67,595.0,180.0,40.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-white-70299879/
-89311466,JONAXEL,Bookcases & shelving units,Frame/mesh baskets/clothes rails,"Frame/mesh baskets/clothes rails, 142-178x51x173 cm",221.33,830.0,148.0,51.0,173.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-mesh-baskets-clothes-rails-s89311466/
 99291646,KOLBJÖRN,Bookcases & shelving units,Shelving unit in/outdoor,"Shelving unit in/outdoor, 80x35x162 cm",120.0,450.0,80.0,35.0,162.0,False,No,https://www.ikea.com/sa/en/p/kolbjoern-shelving-unit-in-outdoor-s99291646/
 9297134,JONAXEL,Bookcases & shelving units,Frame with wire baskets,"Frame with wire baskets, 50x51x70 cm",40.0,150.0,50.0,51.0,70.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-with-wire-baskets-s09297134/
-340047,EKET,Bookcases & shelving units,Suspension rail,"Suspension rail, 35 cm",4.0,15.0,29.0,1.0,4.0,False,No,https://www.ikea.com/sa/en/p/eket-suspension-rail-00340047/
-295530,BESTÅ,Bookcases & shelving units,Glass shelf,"Glass shelf, 56x16 cm",6.67,25.0,56.0,16.0,,False,No,https://www.ikea.com/sa/en/p/besta-glass-shelf-glass-00295530/
 19278328,KALLAX,Bookcases & shelving units,Shelving unit with 4 inserts,"Shelving unit with 4 inserts, 147x147 cm",198.67,745.0,147.0,39.0,147.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-4-inserts-white-s19278328/
 40310208,IVAR,Bookcases & shelving units,Bottle rack,"Bottle rack, 83x30 cm",12.0,45.0,83.0,30.0,3.0,False,No,https://www.ikea.com/sa/en/p/ivar-bottle-rack-grey-40310208/
 50300015,BROR,Bookcases & shelving units,Cabinet with 2 doors,"Cabinet with 2 doors, 76x40x66 cm",132.0,495.0,76.0,40.0,66.0,False,No,https://www.ikea.com/sa/en/p/bror-cabinet-with-2-doors-black-50300015/
@@ -479,7 +451,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 9278338,KALLAX,Bookcases & shelving units,Shelving unit with 10 inserts,"Shelving unit with 10 inserts, 182x182 cm",360.0,1350.0,182.0,39.0,182.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-with-10-inserts-white-s09278338/
 29287997,IVAR,Bookcases & shelving units,Shelving unit with cover,"Shelving unit with cover, 89x50x179 cm",179.73,674.0,89.0,50.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-with-cover-s29287997/
 69248560,IVAR,Bookcases & shelving units,2 sec/storage unit w foldable table,"2 sec/storage unit w foldable table, 175x30-104x179 cm",289.33,1085.0,175.0,179.0,179.0,True,No,https://www.ikea.com/sa/en/p/ivar-2-sec-storage-unit-w-foldable-table-pine-s69248560/
-90422326,IVAR,Bookcases & shelving units,Wire shelf,"Wire shelf, 83x50 cm",12.0,45.0,83.0,50.0,,False,No,https://www.ikea.com/sa/en/p/ivar-wire-shelf-90422326/
 9188842,EKET,Bookcases & shelving units,Wall-mounted cabinet combination,"Wall-mounted cabinet combination, 105x35x120 cm",110.4,414.0,105.0,35.0,120.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-cabinet-combination-white-s09188842/
 9303960,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 254x40x110 cm",276.0,1035.0,254.0,40.0,110.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-white-s09303960/
 19275136,HAVSTA,Bookcases & shelving units,Storage combination,"Storage combination, 142x47x212 cm",596.0,2235.0,142.0,47.0,212.0,False,Yes,https://www.ikea.com/sa/en/p/havsta-storage-combination-dark-brown-s19275136/
@@ -494,7 +465,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 90333938,EKET,Bookcases & shelving units,Cabinet w door and 1 shelf,"Cabinet w door and 1 shelf, 35x35x70 cm",66.67,250.0,35.0,35.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-w-door-and-1-shelf-white-90333938/
 10373495,BEKANT,Bookcases & shelving units,Shelving unit,"Shelving unit, 121x134 cm",398.67,1495.0,121.0,45.0,134.0,False,Yes,https://www.ikea.com/sa/en/p/bekant-shelving-unit-black-10373495/
 29308645,JONAXEL,Bookcases & shelving units,Frame/w bskts/clths rl/shlv uts,"Frame/w bskts/clths rl/shlv uts, 198x51x173 cm",236.0,885.0,198.0,51.0,173.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-w-bskts-clths-rl-shlv-uts-s29308645/
-90347515,ENERYDA,Bookcases & shelving units,Cup handle,"Cup handle, 89 mm",9.33,35.0,22.0,30.0,,False,Yes,https://www.ikea.com/sa/en/p/eneryda-cup-handle-brass-colour-90347515/
 80385348,IVAR,Bookcases & shelving units,Drawer,"Drawer, 39x30x14 cm",20.0,75.0,39.0,30.0,14.0,False,No,https://www.ikea.com/sa/en/p/ivar-drawer-white-80385348/
 9285683,IVAR,Bookcases & shelving units,Shelving unit with shelves/rails,"Shelving unit with shelves/rails, 174x50x179 cm",193.6,726.0,174.0,50.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-with-shelves-rails-pine-s09285683/
 9288021,IVAR,Bookcases & shelving units,Shelving unit with shelves/rails,"Shelving unit with shelves/rails, 174x50x124-179 cm",150.13,563.0,174.0,50.0,,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-with-shelves-rails-pine-s09288021/
@@ -514,7 +484,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49248354,IVAR,Bookcases & shelving units,2 sections/shelves,"2 sections/shelves, 174x50x226 cm",234.13,878.0,174.0,50.0,226.0,False,No,https://www.ikea.com/sa/en/p/ivar-2-sections-shelves-pine-s49248354/
 19272699,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 254x40x190 cm",356.0,1335.0,254.0,40.0,190.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-black-s19272699/
 49282994,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 85x40x190 cm",141.33,530.0,85.0,40.0,190.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-black-s49282994/
-80340048,EKET,Bookcases & shelving units,Suspension rail,"Suspension rail, 70 cm",5.33,20.0,63.0,1.0,4.0,False,No,https://www.ikea.com/sa/en/p/eket-suspension-rail-80340048/
 89283005,BROR,Bookcases & shelving units,Shelving unit with cabinets,"Shelving unit with cabinets, 85x40x110 cm",178.67,670.0,85.0,40.0,110.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-with-cabinets-black-s89283005/
 89294532,VITTSJÖ,Bookcases & shelving units,Storage combination,"Storage combination, 200x36x175 cm",210.67,790.0,200.0,36.0,175.0,False,No,https://www.ikea.com/sa/en/p/vittsjoe-storage-combination-black-brown-glass-s89294532/
 322897,SVALNÄS,Bookcases & shelving units,Cabinet with 2 doors,"Cabinet with 2 doors, 61x35 cm",82.67,310.0,61.0,35.0,39.0,False,No,https://www.ikea.com/sa/en/p/svalnaes-cabinet-with-2-doors-bamboo-white-00322897/
@@ -540,7 +509,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 69288018,IVAR,Bookcases & shelving units,Shelving unit with shelves/rails,"Shelving unit with shelves/rails, 259x50x179 cm",278.67,1045.0,259.0,50.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-with-shelves-rails-pine-s69288018/
 69304754,IVAR,Bookcases & shelving units,Shelving unit w tbl/cabinets/shlvs,"Shelving unit w tbl/cabinets/shlvs, 259x30-104x179 cm",465.33,1745.0,259.0,30.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-w-tbl-cabinets-shlvs-pine-s69304754/
 70470511,IVAR,Bookcases & shelving units,Side unit,"Side unit, 30x179 cm",38.67,145.0,30.0,179.0,179.0,True,No,https://www.ikea.com/sa/en/p/ivar-side-unit-black-70470511/
-70394471,BOTTNA,Bookcases & shelving units,Display shelf,"Display shelf, 76x32 cm",17.33,65.0,76.0,32.0,32.0,True,No,https://www.ikea.com/sa/en/p/bottna-display-shelf-light-beige-70394471/
 89248371,IVAR,Bookcases & shelving units,3 sections/shelves,"3 sections/shelves, 219x30x226 cm",278.67,1045.0,219.0,30.0,226.0,False,No,https://www.ikea.com/sa/en/p/ivar-3-sections-shelves-pine-s89248371/
 89287683,IVAR,Bookcases & shelving units,Shelving unit with clothes rail,"Shelving unit with clothes rail, 89x50x226 cm",114.13,428.0,89.0,50.0,226.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-with-clothes-rail-s89287683/
 89297663,JONAXEL,Bookcases & shelving units,Frame/w bskts/clths rl/shlv uts,"Frame/w bskts/clths rl/shlv uts, 173x51x173 cm",178.67,670.0,173.0,51.0,173.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-w-bskts-clths-rl-shlv-uts-s89297663/
@@ -561,17 +529,14 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 39230712,BILLY,Bookcases & shelving units,Bookcase combination/hght extension,"Bookcase combination/hght extension, 120x28x237 cm",186.67,700.0,120.0,28.0,237.0,False,No,https://www.ikea.com/sa/en/p/billy-bookcase-combination-hght-extension-black-brown-s39230712/
 39311789,JONAXEL,Bookcases & shelving units,Frame/mesh baskts/clths rl/shlv uts,"Frame/mesh baskts/clths rl/shlv uts, 173x51x207 cm",253.33,950.0,173.0,51.0,207.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-mesh-baskts-clths-rl-shlv-uts-s39311789/
 49294548,VITTSJÖ,Bookcases & shelving units,Storage combination,"Storage combination, 300x36x175 cm",276.0,1035.0,300.0,36.0,175.0,False,No,https://www.ikea.com/sa/en/p/vittsjoe-storage-combination-black-brown-glass-s49294548/
-59311463,JONAXEL,Bookcases & shelving units,Frame/mesh baskets/clothes rails,"Frame/mesh baskets/clothes rails, 148x51x207 cm",260.0,975.0,148.0,51.0,207.0,False,No,https://www.ikea.com/sa/en/p/jonaxel-frame-mesh-baskets-clothes-rails-s59311463/
 59385755,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 85x55x110 cm",100.0,375.0,85.0,55.0,110.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-white-s59385755/
 69248386,IVAR,Bookcases & shelving units,3 sections/shelves,"3 sections/shelves, 259x30x179 cm",296.0,1110.0,259.0,30.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-3-sections-shelves-pine-s69248386/
 69285473,ALGOT / BROR,Bookcases & shelving units,Shelving unit with cabinet,"Shelving unit with cabinet, 162x41x162 cm",349.6,1311.0,162.0,41.0,162.0,False,No,https://www.ikea.com/sa/en/p/algot-bror-shelving-unit-with-cabinet-black-s69285473/
 79272696,BROR,Bookcases & shelving units,Shelving unit,"Shelving unit, 234x55x110 cm",300.0,1125.0,234.0,55.0,110.0,False,No,https://www.ikea.com/sa/en/p/bror-shelving-unit-black-s79272696/
 79303495,IVAR,Bookcases & shelving units,Shelving unit w cabinets/drawers,"Shelving unit w cabinets/drawers, 134x30x179 cm",242.67,910.0,134.0,30.0,179.0,False,No,https://www.ikea.com/sa/en/p/ivar-shelving-unit-w-cabinets-drawers-pine-red-s79303495/
-79305102,JONAXEL,Bookcases & shelving units,Frame/wire baskets/clothes rails,"Frame/wire baskets/clothes rails, 142-178x51x173 cm",168.0,630.0,178.0,51.0,173.0,True,No,https://www.ikea.com/sa/en/p/jonaxel-frame-wire-baskets-clothes-rails-s79305102/
 80450353,IVAR,Bookcases & shelving units,Drawer,"Drawer, 39x30x14 cm",20.0,75.0,39.0,30.0,14.0,False,No,https://www.ikea.com/sa/en/p/ivar-drawer-red-80450353/
 89285518,ALGOT,Bookcases & shelving units,3 sections/shelves,"3 sections/shelves, 189x41x170 cm",158.4,594.0,189.0,41.0,170.0,False,No,https://www.ikea.com/sa/en/p/algot-3-sections-shelves-black-s89285518/
 99184439,SVALNÄS,Bookcases & shelving units,Wall-mounted storage combination,"Wall-mounted storage combination, 193x35x176 cm",552.0,2070.0,193.0,35.0,176.0,False,No,https://www.ikea.com/sa/en/p/svalnaes-wall-mounted-storage-combination-bamboo-white-s99184439/
-99297634,JONAXEL,Bookcases & shelving units,Frame/wire baskets/clothes rails,"Frame/wire baskets/clothes rails, 142-178x51x173 cm",194.67,730.0,178.0,51.0,173.0,True,No,https://www.ikea.com/sa/en/p/jonaxel-frame-wire-baskets-clothes-rails-s99297634/
 49300827,BESTÅ,Cabinets & cupboards,Storage combination w glass doors,"Storage combination w glass doors, 120x42x192 cm",493.33,1850.0,120.0,42.0,192.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-w-glass-doors-black-brown-selsviken-dark-red-brown-clear-glass-s49300827/
 29297958,BESTÅ,Cabinets & cupboards,TV bench with drawers,"TV bench with drawers, 120x42x48 cm",218.67,820.0,120.0,42.0,48.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-with-drawers-black-brown-selsviken-stallarp-high-gloss-dark-red-brown-s29297958/
 59286468,EKET,Cabinets & cupboards,Cabinet combination with legs,"Cabinet combination with legs, 70x35x80 cm",82.93,311.0,70.0,35.0,80.0,False,Yes,https://www.ikea.com/sa/en/p/eket-cabinet-combination-with-legs-white-s59286468/
@@ -709,7 +674,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49161609,LIXHULT,Cabinets & cupboards,Storage combination,"Storage combination, 35x117 cm",65.07,244.0,35.0,35.0,95.0,False,No,https://www.ikea.com/sa/en/p/lixhult-storage-combination-red-orange-s49161609/
 69279189,LIXHULT,Cabinets & cupboards,Storage combination,"Storage combination, 140x142 cm",309.33,1160.0,140.0,35.0,120.0,False,Yes,https://www.ikea.com/sa/en/p/lixhult-storage-combination-dark-blue-s69279189/
 9266024,HAVSTA,Cabinets & cupboards,Storage combination w glass-doors,"Storage combination w glass-doors, 243x37x134 cm",673.33,2525.0,243.0,37.0,134.0,False,Yes,https://www.ikea.com/sa/en/p/havsta-storage-combination-w-glass-doors-dark-brown-s09266024/
-10363632,HÄLLAN,Cabinets & cupboards,Pair of legs,"Pair of legs, 29 cm",13.33,50.0,45.0,2.0,29.0,False,No,https://www.ikea.com/sa/en/p/haellan-pair-of-legs-white-10363632/
 29286865,BESTÅ / EKET,Cabinets & cupboards,Cabinet combination for TV,"Cabinet combination for TV, 300x42x210 cm",420.8,1578.0,300.0,42.0,210.0,False,Yes,https://www.ikea.com/sa/en/p/besta-eket-cabinet-combination-for-tv-white-light-grey-red-s29286865/
 29336356,EKET,Cabinets & cupboards,Wall cabinet with glass door,"Wall cabinet with glass door, 35x25x35 cm",33.33,125.0,35.0,25.0,35.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-cabinet-with-glass-door-white-s29336356/
 29336380,EKET,Cabinets & cupboards,Wall-mounted storage combination,"Wall-mounted storage combination, 105x35x70 cm",102.4,384.0,105.0,35.0,70.0,False,Yes,https://www.ikea.com/sa/en/p/eket-wall-mounted-storage-combination-light-grey-white-s29336380/
@@ -884,7 +848,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 20182278,BÖRJE,Chairs,Chair,Chair,46.67,175.0,44.0,55.0,100.0,False,No,https://www.ikea.com/sa/en/p/boerje-chair-brown-gobo-white-20182278/
 40466389,GISTAD,Chairs,Recliner,Recliner,252.0,945.0,66.0,84.0,96.0,False,Yes,https://www.ikea.com/sa/en/p/gistad-recliner-idekulla-dark-red-40466389/
 59240828,POÄNG,Chairs,Armchair,Armchair,101.87,382.0,68.0,82.0,100.0,False,Yes,https://www.ikea.com/sa/en/p/poaeng-armchair-black-brown-knisa-black-s59240828/
-50320565,LÅNGFJÄLL,Chairs,Pair of armrests,Pair of armrests,26.67,100.0,15.0,27.0,32.0,False,Yes,https://www.ikea.com/sa/en/p/langfjaell-pair-of-armrests-black-50320565/
 80340760,EKEDALEN,Chairs,Chair,Chair,60.0,225.0,43.0,51.0,95.0,False,No,https://www.ikea.com/sa/en/p/ekedalen-chair-dark-brown-orrsta-light-grey-80340760/
 89297286,MÖRBYLÅNGA / BALTSAR,Chairs,Table and 6 chairs,"Table and 6 chairs, 220x100 cm",1617.33,6065.0,100.0,100.0,,True,No,https://www.ikea.com/sa/en/p/moerbylanga-baltsar-table-and-6-chairs-oak-veneer-brown-stained-black-blue-s89297286/
 49031774,LANDSKRONA,Chairs,Armchair,Armchair,532.0,1995.0,89.0,89.0,78.0,False,Yes,https://www.ikea.com/sa/en/p/landskrona-armchair-grann-bomstad-black-metal-s49031774/
@@ -965,7 +928,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 9246088,MÖRBYLÅNGA / BERNHARD,Chairs,Table and 4 chairs,"Table and 4 chairs, 140x85 cm",1406.67,5275.0,85.0,85.0,74.0,True,No,https://www.ikea.com/sa/en/p/moerbylanga-bernhard-table-and-4-chairs-brown-mjuk-dark-brown-s09246088/
 9285701,INGATORP / INGOLF,Chairs,Table and 6 chairs,"Table and 6 chairs, 155/215x87 cm",804.0,3015.0,87.0,87.0,,True,No,https://www.ikea.com/sa/en/p/ingatorp-ingolf-table-and-6-chairs-black-sporda-dark-grey-s09285701/
 9289327,DELAKTIG,Chairs,Chaise longue with armrest,Chaise longue with armrest,720.0,2700.0,149.0,84.0,45.0,False,Yes,https://www.ikea.com/sa/en/p/delaktig-chaise-longue-with-armrest-gunnared-light-brown-pink-s09289327/
-429426,HATTEFJÄLL,Chairs,Pair of armrests,Pair of armrests,40.0,150.0,4.0,23.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/hattefjaell-pair-of-armrests-black-00429426/
 10198604,KIVIK,Chairs,Chaise longue,Chaise longue,693.33,2600.0,90.0,163.0,83.0,False,No,https://www.ikea.com/sa/en/p/kivik-chaise-longue-grann-bomstad-black-10198604/
 10471085,GRUVBYN,Chairs,Chair,Chair,145.33,545.0,51.0,59.0,107.0,False,No,https://www.ikea.com/sa/en/p/gruvbyn-chair-brown-nordvalla-dark-beige-10471085/
 19131652,MÖRBYLÅNGA / LEIFARNE,Chairs,Table and 6 chairs,"Table and 6 chairs, 220x100 cm",977.33,3665.0,100.0,100.0,74.0,True,No,https://www.ikea.com/sa/en/p/moerbylanga-leifarne-table-and-6-chairs-brown-white-s19131652/
@@ -1168,7 +1130,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 19275075,STUVA / FRITIDS,Children's furniture,Wardrobe,"Wardrobe, 120x50x192 cm",412.0,1545.0,120.0,50.0,192.0,False,Yes,https://www.ikea.com/sa/en/p/stuva-fritids-wardrobe-white-white-s19275075/
 50422494,GODISHUS,Children's furniture,Wardrobe,"Wardrobe, 60x51x178 cm",105.33,395.0,60.0,51.0,178.0,False,No,https://www.ikea.com/sa/en/p/godishus-wardrobe-white-50422494/
 50171122,TROFAST,Children's furniture,Wall storage,"Wall storage, 99x30 cm",33.33,125.0,99.0,21.0,30.0,False,No,https://www.ikea.com/sa/en/p/trofast-wall-storage-white-50171122/
-30306495,PÅHL,Children's furniture,Add-on unit,"Add-on unit, 64x39 cm",26.67,100.0,64.0,17.0,39.0,False,Yes,https://www.ikea.com/sa/en/p/pahl-add-on-unit-white-green-30306495/
 29228470,TROFAST,Children's furniture,Storage combination,"Storage combination, 99x44x56 cm",97.33,365.0,99.0,44.0,56.0,False,Yes,https://www.ikea.com/sa/en/p/trofast-storage-combination-white-white-s29228470/
 99228476,TROFAST,Children's furniture,Storage combination,"Storage combination, 46x30x145 cm",66.67,250.0,46.0,30.0,145.0,False,Yes,https://www.ikea.com/sa/en/p/trofast-storage-combination-white-white-s99228476/
 50196354,SUNDVIK,Children's furniture,Children's table,"Children's table, 76x50 cm",37.33,140.0,50.0,50.0,50.0,True,No,https://www.ikea.com/sa/en/p/sundvik-childrens-table-grey-brown-50196354/
@@ -1198,7 +1159,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 99228551,TROFAST,Children's furniture,Storage combination,"Storage combination, 46x30x145 cm",69.33,260.0,46.0,30.0,145.0,False,Yes,https://www.ikea.com/sa/en/p/trofast-storage-combination-white-green-white-s99228551/
 69128992,PÅHL,Children's furniture,Desk with shelf unit,"Desk with shelf unit, 96x58 cm",112.0,420.0,96.0,58.0,,False,Yes,https://www.ikea.com/sa/en/p/pahl-desk-with-shelf-unit-white-s69128992/
 49128969,PÅHL,Children's furniture,Desk with add-on unit,"Desk with add-on unit, 128x58 cm",113.33,425.0,128.0,58.0,,False,Yes,https://www.ikea.com/sa/en/p/pahl-desk-with-add-on-unit-white-s49128969/
-91415,TROFAST,Children's furniture,Lid,"Lid, 20x28 cm",1.33,5.0,28.0,28.0,,True,No,https://www.ikea.com/sa/en/p/trofast-lid-white-00091415/
 20308697,TROFAST,Children's furniture,Frame,"Frame, 94x52 cm",85.33,320.0,94.0,44.0,52.0,False,No,https://www.ikea.com/sa/en/p/trofast-frame-light-white-stained-pine-pine-20308697/
 10308693,TROFAST,Children's furniture,Frame,"Frame, 44x91 cm",52.0,195.0,44.0,30.0,91.0,False,No,https://www.ikea.com/sa/en/p/trofast-frame-light-white-stained-pine-pine-10308693/
 9102532,TROFAST,Children's furniture,Storage combination,"Storage combination, 94x44x52 cm",105.33,395.0,94.0,44.0,52.0,False,No,https://www.ikea.com/sa/en/p/trofast-storage-combination-light-white-stained-pine-pine-white-s09102532/
@@ -1300,7 +1260,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 410747,HUSARÖ,Outdoor furniture,Armchair,"Armchair, outdoor",132.0,495.0,64.0,80.0,102.0,False,No,https://www.ikea.com/sa/en/p/husaroe-armchair-outdoor-dark-grey-00410747/
 50405338,SJÄLLAND,Outdoor furniture,Reclining chair,"Reclining chair, outdoor",84.27,316.0,58.0,75.0,110.0,False,No,https://www.ikea.com/sa/en/p/sjaelland-reclining-chair-outdoor-light-grey-foldable-dark-grey-50405338/
 70386503,SJÄLLAND,Outdoor furniture,Chair with armrests,"Chair with armrests, outdoor",73.6,276.0,60.0,60.0,86.0,False,No,https://www.ikea.com/sa/en/p/sjaelland-chair-with-armrests-outdoor-light-grey-light-brown-70386503/
-10386450,SOLLERÖN,Outdoor furniture,Armrest section,"Armrest section, outdoor",122.67,460.0,18.0,82.0,53.0,False,No,https://www.ikea.com/sa/en/p/solleroen-armrest-section-outdoor-brown-10386450/
 29262435,SJÄLLAND,Outdoor furniture,Table,"Table, outdoor, 71x71x73 cm",94.93,356.0,71.0,71.0,73.0,True,No,https://www.ikea.com/sa/en/p/sjaelland-table-outdoor-dark-grey-light-grey-s29262435/
 49267286,HAVSTEN,Outdoor furniture,4-seat sofa,"4-seat sofa, in/outdoor, 326x94x90 cm",1046.67,3925.0,326.0,94.0,90.0,False,No,https://www.ikea.com/sa/en/p/havsten-4-seat-sofa-in-outdoor-with-open-end-without-armrests-beige-s49267286/
 59303665,SOLLERÖN,Outdoor furniture,2-seat modular sofa,"2-seat modular sofa, outdoor, 161x82x84 cm",472.8,1773.0,161.0,82.0,84.0,False,Yes,https://www.ikea.com/sa/en/p/solleroen-2-seat-modular-sofa-outdoor-dark-grey-kuddarna-beige-s59303665/
@@ -1315,9 +1274,7 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 9266477,SJÄLLAND,Outdoor furniture,Table+6 chairs w armrests,"Table+6 chairs w armrests, outdoor, 156x90 cm",697.71,2616.4,90.0,90.0,73.0,True,Yes,https://www.ikea.com/sa/en/p/sjaelland-table-6-chairs-w-armrests-outdoor-light-brown-froesoen-duvholmen-dark-grey-s09266477/
 10267046,KUNGSHOLMEN,Outdoor furniture,Corner section,"Corner section, outdoor",153.33,575.0,80.0,80.0,73.0,False,No,https://www.ikea.com/sa/en/p/kungsholmen-corner-section-outdoor-black-brown-10267046/
 19287714,SOLLERÖN,Outdoor furniture,Armchair,"Armchair, outdoor",332.53,1247.0,98.0,82.0,88.0,False,Yes,https://www.ikea.com/sa/en/p/solleroen-armchair-outdoor-dark-grey-froesoen-duvholmen-beige-s19287714/
-60424586,SOLLERÖN,Outdoor furniture,Armrest section,"Armrest section, outdoor",132.0,495.0,18.0,82.0,53.0,False,No,https://www.ikea.com/sa/en/p/solleroen-armrest-section-outdoor-dark-grey-60424586/
 79262447,SJÄLLAND,Outdoor furniture,Table,"Table, outdoor, 156x90 cm",180.27,676.0,90.0,90.0,73.0,True,No,https://www.ikea.com/sa/en/p/sjaelland-table-outdoor-light-brown-light-grey-s79262447/
-10404519,HAVSTEN,Outdoor furniture,Supporting stand,"Supporting stand, outdoor",33.33,125.0,2.0,92.0,75.0,False,No,https://www.ikea.com/sa/en/p/havsten-supporting-stand-outdoor-beige-10404519/
 20424593,SOLLERÖN,Outdoor furniture,Corner section,"Corner section, outdoor",189.07,709.0,82.0,82.0,74.0,False,No,https://www.ikea.com/sa/en/p/solleroen-corner-section-outdoor-dark-grey-20424593/
 49303595,SOLLERÖN,Outdoor furniture,Modular corner sofa 4-seat,"Modular corner sofa 4-seat, outdoor",1158.67,4345.0,287.0,82.0,84.0,False,Yes,https://www.ikea.com/sa/en/p/solleroen-modular-corner-sofa-4-seat-outdoor-with-footstool-dark-grey-kuddarna-beige-s49303595/
 60151840,LÄCKÖ,Outdoor furniture,Chair,"Chair, outdoor",39.73,149.0,42.0,52.0,87.0,False,No,https://www.ikea.com/sa/en/p/laeckoe-chair-outdoor-grey-60151840/
@@ -1326,7 +1283,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 19241387,SOLLERÖN,Outdoor furniture,3-seat modular sofa,"3-seat modular sofa, outdoor, 223x82x87 cm",745.07,2794.0,223.0,82.0,87.0,False,Yes,https://www.ikea.com/sa/en/p/solleroen-3-seat-modular-sofa-outdoor-brown-kungsoe-white-s19241387/
 20373621,SOLLERÖN,Outdoor furniture,Corner section,"Corner section, outdoor",189.07,709.0,82.0,82.0,74.0,False,No,https://www.ikea.com/sa/en/p/solleroen-corner-section-outdoor-brown-20373621/
 29291857,SJÄLLAND,Outdoor furniture,Table+6 reclining chairs,"Table+6 reclining chairs, outdoor, 156x90 cm",827.2,3102.0,90.0,90.0,73.0,True,Yes,https://www.ikea.com/sa/en/p/sjaelland-table-6-reclining-chairs-outdoor-dark-grey-kuddarna-beige-s29291857/
-40404513,HAVSTEN,Outdoor furniture,Armrest section,"Armrest section, outdoor",105.33,395.0,9.0,92.0,75.0,False,No,https://www.ikea.com/sa/en/p/havsten-armrest-section-outdoor-beige-40404513/
 99285928,SOLLERÖN,Outdoor furniture,Modular corner sofa 3-seat,"Modular corner sofa 3-seat, outdoor",950.4,3564.0,144.0,82.0,88.0,False,No,https://www.ikea.com/sa/en/p/solleroen-modular-corner-sofa-3-seat-outdoor-brown-froesoen-duvholmen-beige-s99285928/
 90443135,RÅSKOG,Room dividers,Trolley,"Trolley, 35x45x78 cm",50.4,189.0,45.0,45.0,78.0,True,Yes,https://www.ikea.com/sa/en/p/raskog-trolley-grey-green-90443135/
 70301537,KALLAX,Room dividers,Shelving unit,"Shelving unit, 182x182 cm",193.33,725.0,182.0,39.0,182.0,False,Yes,https://www.ikea.com/sa/en/p/kallax-shelving-unit-white-70301537/
@@ -1410,7 +1366,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 99297484,FLOTTEBO,Sofas & armchairs,Sofa-bed,"Sofa-bed, 90 cm",425.6,1596.0,200.0,90.0,79.0,False,Yes,https://www.ikea.com/sa/en/p/flottebo-sofa-bed-vissle-purple-s99297484/
 29282853,SÖDERHAMN,Sofas & armchairs,3-seat sofa,3-seat sofa,632.0,2370.0,192.0,99.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/soederhamn-3-seat-sofa-with-open-end-finnsta-turquoise-s29282853/
 49248189,KUNGSHAMN,Sofas & armchairs,1-seat module,1-seat module,156.0,585.0,67.0,85.0,71.0,False,Yes,https://www.ikea.com/sa/en/p/kungshamn-1-seat-module-yttered-multicolour-s49248189/
-59135653,SÖDERHAMN,Sofas & armchairs,Armrest,Armrest,46.67,175.0,82.0,6.0,53.0,False,Yes,https://www.ikea.com/sa/en/p/soederhamn-armrest-finnsta-turquoise-s59135653/
 79284468,SÖDERHAMN,Sofas & armchairs,Corner sofa,"Corner sofa, 3-seat",740.0,2775.0,192.0,99.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/soederhamn-corner-sofa-3-seat-samsta-light-pink-s79284468/
 29277700,VALLENTUNA,Sofas & armchairs,2-seat modular sofa w 2 sofa-beds,2-seat modular sofa w 2 sofa-beds,1038.93,3896.0,186.0,113.0,84.0,False,Yes,https://www.ikea.com/sa/en/p/vallentuna-2-seat-modular-sofa-w-2-sofa-beds-hillared-light-blue-s29277700/
 99254677,GRÖNLID,Sofas & armchairs,Corner sofa,"Corner sofa, 4-seat",1116.0,4185.0,235.0,98.0,104.0,False,Yes,https://www.ikea.com/sa/en/p/groenlid-corner-sofa-4-seat-with-open-end-inseros-white-s99254677/
@@ -1425,7 +1380,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 50468694,EMTEN,Sofas & armchairs,Bath mat,"Bath mat, 50x80 cm",10.4,39.0,50.0,80.0,,True,No,https://www.ikea.com/sa/en/p/emten-bath-mat-dark-brown-50468694/
 99241840,NORSBORG,Sofas & armchairs,3-seat section,3-seat section,448.0,1680.0,181.0,88.0,85.0,False,Yes,https://www.ikea.com/sa/en/p/norsborg-3-seat-section-edum-bright-green-metal-s99241840/
 40446985,GENEVAD,Sofas & armchairs,2-seat sofa,2-seat sofa,719.2,2697.0,172.0,108.0,95.0,False,No,https://www.ikea.com/sa/en/p/genevad-2-seat-sofa-garlinge-dark-brown-40446985/
-59285360,VIMLE,Sofas & armchairs,Armrest,Armrest,54.67,205.0,15.0,93.0,68.0,False,Yes,https://www.ikea.com/sa/en/p/vimle-armrest-orrsta-black-blue-s59285360/
 39305528,KIVIK,Sofas & armchairs,Corner sofa,"Corner sofa, 4-seat",1238.67,4645.0,257.0,95.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/kivik-corner-sofa-4-seat-skiftebo-dark-grey-s39305528/
 89305540,KIVIK,Sofas & armchairs,Corner sofa,"Corner sofa, 5-seat",1585.33,5945.0,347.0,163.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/kivik-corner-sofa-5-seat-with-chaise-longue-skiftebo-dark-grey-s89305540/
 99289375,DELAKTIG,Sofas & armchairs,3-seat platform,3-seat platform,686.67,2575.0,204.0,84.0,,False,Yes,https://www.ikea.com/sa/en/p/delaktig-3-seat-platform-gunnared-light-brown-pink-s99289375/
@@ -1433,7 +1387,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 79279419,VALLENTUNA,Sofas & armchairs,Seat module,Seat module,170.67,640.0,100.0,80.0,45.0,False,Yes,https://www.ikea.com/sa/en/p/vallentuna-seat-module-hillared-light-blue-s79279419/
 39149892,LYCKSELE LÖVÅS,Sofas & armchairs,Two-seat sofa-bed,Two-seat sofa-bed,332.0,1245.0,142.0,100.0,87.0,False,Yes,https://www.ikea.com/sa/en/p/lycksele-loevas-two-seat-sofa-bed-ebbarp-black-white-s39149892/
 79295551,VIMLE,Sofas & armchairs,3-seat sofa,3-seat sofa,710.67,2665.0,241.0,98.0,103.0,False,Yes,https://www.ikea.com/sa/en/p/vimle-3-seat-sofa-with-headrest-gunnared-medium-grey-s79295551/
-79254659,GRÖNLID,Sofas & armchairs,Armrest,Armrest,53.33,200.0,18.0,93.0,68.0,False,Yes,https://www.ikea.com/sa/en/p/groenlid-armrest-inseros-white-s79254659/
 59259691,DELAKTIG,Sofas & armchairs,3-seat sofa,3-seat sofa,1040.0,3900.0,204.0,84.0,79.0,False,Yes,https://www.ikea.com/sa/en/p/delaktig-3-seat-sofa-hillared-dark-blue-s59259691/
 89278612,GRÖNLID,Sofas & armchairs,Corner sofa-bed,"Corner sofa-bed, 5-seat",2029.33,7610.0,252.0,164.0,104.0,False,Yes,https://www.ikea.com/sa/en/p/groenlid-corner-sofa-bed-5-seat-with-chaise-longue-sporda-natural-s89278612/
 99292047,LIDHULT,Sofas & armchairs,4-seat sofa,4-seat sofa,1252.0,4695.0,349.0,164.0,102.0,False,Yes,https://www.ikea.com/sa/en/p/lidhult-4-seat-sofa-with-chaise-longue-gassebol-light-beige-s99292047/
@@ -1443,15 +1396,12 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49252949,KIVIK,Sofas & armchairs,U-shaped sofa,"U-shaped sofa, 6 seat",1838.67,6895.0,328.0,257.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/kivik-u-shaped-sofa-6-seat-orrsta-red-s49252949/
 59270354,LANDSKRONA,Sofas & armchairs,4-seat sofa,4-seat sofa,1598.67,5995.0,282.0,158.0,78.0,False,Yes,https://www.ikea.com/sa/en/p/landskrona-4-seat-sofa-with-chaise-longue-grann-bomstad-golden-brown-metal-s59270354/
 69285294,VIMLE,Sofas & armchairs,U-shaped sofa,"U-shaped sofa, 6 seat",2238.67,8395.0,327.0,249.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/vimle-u-shaped-sofa-6-seat-with-open-end-tallmyra-black-grey-s69285294/
-40417695,VALLENTUNA,Sofas & armchairs,Backrest,"Backrest, 80x80 cm",80.0,300.0,80.0,13.0,84.0,False,Yes,https://www.ikea.com/sa/en/p/vallentuna-backrest-murum-white-40417695/
 9299661,VIMLE,Sofas & armchairs,Corner sofa,"Corner sofa, 4-seat",1281.33,4805.0,235.0,98.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/vimle-corner-sofa-4-seat-with-open-end-dalstorp-multicolour-s09299661/
 29278115,GRÖNLID,Sofas & armchairs,2-seat sofa-bed,2-seat sofa-bed,958.67,3595.0,196.0,98.0,104.0,False,Yes,https://www.ikea.com/sa/en/p/groenlid-2-seat-sofa-bed-ljungen-medium-grey-s29278115/
 39306368,NYHAMN,Sofas & armchairs,3-seat sofa-bed,3-seat sofa-bed,318.67,1195.0,200.0,97.0,90.0,False,Yes,https://www.ikea.com/sa/en/p/nyhamn-3-seat-sofa-bed-with-foam-mattress-knisa-grey-beige-s39306368/
 39817883,POÄNG,Sofas & armchairs,Footstool,Footstool,73.33,275.0,68.0,54.0,39.0,False,Yes,https://www.ikea.com/sa/en/p/poaeng-footstool-black-brown-smidig-black-s39817883/
-79279396,VALLENTUNA,Sofas & armchairs,Back rest,"Back rest, 100x80 cm",85.33,320.0,100.0,13.0,4.0,False,Yes,https://www.ikea.com/sa/en/p/vallentuna-back-rest-hillared-light-blue-s79279396/
 29277960,VALLENTUNA,Sofas & armchairs,Modular corner sofa,"Modular corner sofa, 3-seat",1227.73,4604.0,266.0,93.0,84.0,False,Yes,https://www.ikea.com/sa/en/p/vallentuna-modular-corner-sofa-3-seat-with-storage-orrsta-light-grey-s29277960/
 39256071,GRÖNLID,Sofas & armchairs,4-seat sofa,4-seat sofa,1297.33,4865.0,339.0,164.0,104.0,False,Yes,https://www.ikea.com/sa/en/p/groenlid-4-seat-sofa-with-chaise-longues-ljungen-medium-grey-s39256071/
-9279371,VALLENTUNA,Sofas & armchairs,Armrest,Armrest,58.67,220.0,80.0,13.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/vallentuna-armrest-hillared-light-blue-s09279371/
 59257437,LIDHULT,Sofas & armchairs,Corner sofa,"Corner sofa, 5-seat",1717.33,6440.0,275.0,98.0,102.0,False,Yes,https://www.ikea.com/sa/en/p/lidhult-corner-sofa-5-seat-lejde-red-brown-red-brown-s59257437/
 9289884,LIDHULT,Sofas & armchairs,2-seat section,2-seat section,532.0,1995.0,141.0,97.0,95.0,False,Yes,https://www.ikea.com/sa/en/p/lidhult-2-seat-section-lejde-grey-black-s09289884/
 19289303,DELAKTIG,Sofas & armchairs,Armchair,Armchair,626.67,2350.0,94.0,84.0,79.0,False,Yes,https://www.ikea.com/sa/en/p/delaktig-armchair-gunnared-light-brown-pink-s19289303/
@@ -1519,11 +1469,9 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 49289047,DELAKTIG,Sofas & armchairs,Platform,"Platform, armchair",400.0,1500.0,94.0,84.0,45.0,False,Yes,https://www.ikea.com/sa/en/p/delaktig-platform-armchair-gunnared-beige-s49289047/
 59256579,GRÖNLID,Sofas & armchairs,Corner sofa,"Corner sofa, 5-seat",1973.33,7400.0,252.0,164.0,104.0,False,No,https://www.ikea.com/sa/en/p/groenlid-corner-sofa-5-seat-with-chaise-longue-kimstad-dark-brown-s59256579/
 69256574,GRÖNLID,Sofas & armchairs,Corner sofa,"Corner sofa, 5-seat",1600.0,6000.0,322.0,98.0,104.0,False,No,https://www.ikea.com/sa/en/p/groenlid-corner-sofa-5-seat-kimstad-dark-brown-s69256574/
-60397998,GRÖNLID,Sofas & armchairs,Armrest,Armrest,80.0,300.0,18.0,93.0,68.0,False,No,https://www.ikea.com/sa/en/p/groenlid-armrest-kimstad-dark-brown-60397998/
 69276039,LIDHULT,Sofas & armchairs,Corner sofa,"Corner sofa, 5-seat",1549.33,5810.0,275.0,98.0,102.0,False,Yes,https://www.ikea.com/sa/en/p/lidhult-corner-sofa-5-seat-with-open-end-lejde-grey-black-s69276039/
 79285439,VIMLE,Sofas & armchairs,Corner section,Corner section,336.0,1260.0,93.0,93.0,83.0,False,Yes,https://www.ikea.com/sa/en/p/vimle-corner-section-gunnared-medium-grey-s79285439/
 80398628,GRÖNLID,Sofas & armchairs,Chaise longue section,Chaise longue section,426.67,1600.0,81.0,164.0,104.0,False,No,https://www.ikea.com/sa/en/p/groenlid-chaise-longue-section-kimstad-dark-brown-80398628/
-89241614,NORSBORG,Sofas & armchairs,Armrest,Armrest,90.67,340.0,16.0,88.0,52.0,False,Yes,https://www.ikea.com/sa/en/p/norsborg-armrest-edum-bright-green-s89241614/
 89256605,GRÖNLID,Sofas & armchairs,4-seat sofa,4-seat sofa,1520.0,5700.0,339.0,164.0,104.0,False,No,https://www.ikea.com/sa/en/p/groenlid-4-seat-sofa-with-chaise-longues-kimstad-dark-brown-s89256605/
 99292052,LIDHULT,Sofas & armchairs,4-seat sofa,4-seat sofa,1660.8,6228.0,349.0,164.0,102.0,False,No,https://www.ikea.com/sa/en/p/lidhult-4-seat-sofa-with-chaise-longue-grann-bomstad-dark-brown-s99292052/
 69130037,FLEKKE,Sofas & armchairs,Day-bed w 2 drawers/2 mattresses,"Day-bed w 2 drawers/2 mattresses, 80x200 cm",556.0,2085.0,88.0,200.0,86.0,True,Yes,https://www.ikea.com/sa/en/p/flekke-day-bed-w-2-drawers-2-mattresses-black-brown-moshult-firm-s69130037/
@@ -1540,7 +1488,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 70466496,LJUV,Tables & desks,Coffee table,"Coffee table, 60x52 cm",65.33,245.0,52.0,52.0,28.0,True,No,https://www.ikea.com/sa/en/p/ljuv-coffee-table-hexagonal-gold-colour-pink-70466496/
 60214159,MALM,Tables & desks,Desk,"Desk, 140x65 cm",126.67,475.0,140.0,65.0,73.0,False,Yes,https://www.ikea.com/sa/en/p/malm-desk-white-60214159/
 59133593,LINNMON / ADILS,Tables & desks,Corner table,"Corner table, 120x120 cm",72.0,270.0,120.0,120.0,74.0,True,Yes,https://www.ikea.com/sa/en/p/linnmon-adils-corner-table-black-brown-blue-s59133593/
-19216694,SKÅDIS,Tables & desks,Pegboard combination,"Pegboard combination, 36x56 cm",21.33,80.0,36.0,12.0,56.0,False,No,https://www.ikea.com/sa/en/p/skadis-pegboard-combination-white-s19216694/
 50411990,GLADOM,Tables & desks,Tray table,"Tray table, 45x53 cm",15.73,59.0,45.0,53.0,53.0,True,Yes,https://www.ikea.com/sa/en/p/gladom-tray-table-black-50411990/
 90449905,LACK,Tables & desks,Coffee table,"Coffee table, 90x55 cm",23.73,89.0,55.0,55.0,45.0,True,Yes,https://www.ikea.com/sa/en/p/lack-coffee-table-white-90449905/
 10203610,MALM,Tables & desks,Dressing table,"Dressing table, 120x41 cm",100.0,375.0,120.0,41.0,78.0,False,Yes,https://www.ikea.com/sa/en/p/malm-dressing-table-white-10203610/
@@ -1599,7 +1546,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 40173065,LIATORP,Tables & desks,Side table,"Side table, 57x40 cm",65.33,245.0,40.0,40.0,60.0,True,No,https://www.ikea.com/sa/en/p/liatorp-side-table-white-glass-40173065/
 70290459,BRIMNES,Tables & desks,Dressing table,"Dressing table, 70x42 cm",92.0,345.0,70.0,42.0,77.0,False,No,https://www.ikea.com/sa/en/p/brimnes-dressing-table-white-70290459/
 60261184,MALMSTA,Tables & desks,Coffee table,"Coffee table, 130x80 cm",238.67,895.0,80.0,80.0,52.0,True,No,https://www.ikea.com/sa/en/p/malmsta-coffee-table-black-brown-60261184/
-20302596,ISBERGET,Tables & desks,Tablet stand,"Tablet stand, 25x25 cm",2.67,10.0,25.0,25.0,9.0,False,Yes,https://www.ikea.com/sa/en/p/isberget-tablet-stand-white-20302596/
 89110934,THYGE,Tables & desks,Desk,"Desk, 160x80 cm",132.0,495.0,80.0,80.0,,True,No,https://www.ikea.com/sa/en/p/thyge-desk-white-silver-colour-s89110934/
 79304008,LINNMON / ALEX,Tables & desks,Table,"Table, 150x75 cm",212.0,795.0,75.0,75.0,73.0,True,Yes,https://www.ikea.com/sa/en/p/linnmon-alex-table-black-blue-s79304008/
 99930961,LINNMON / LALLE,Tables & desks,Table,"Table, 120x60 cm",102.67,385.0,60.0,60.0,73.0,True,Yes,https://www.ikea.com/sa/en/p/linnmon-lalle-table-black-brown-black-s99930961/
@@ -1662,7 +1608,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 69223828,GERTON,Tables & desks,Table,"Table, 310x75 cm",342.67,1285.0,75.0,75.0,73.0,True,No,https://www.ikea.com/sa/en/p/gerton-table-beech-black-white-s69223828/
 89214314,LINNMON / GODVIN,Tables & desks,Table,"Table, 120x60 cm",100.27,376.0,60.0,60.0,74.0,True,No,https://www.ikea.com/sa/en/p/linnmon-godvin-table-beige-white-s89214314/
 70299959,TYSSEDAL,Tables & desks,Bedside table,"Bedside table, 51x40 cm",86.67,325.0,51.0,40.0,59.0,False,No,https://www.ikea.com/sa/en/p/tyssedal-bedside-table-white-70299959/
-90180025,MICKE,Tables & desks,Add-on unit high,"Add-on unit high, 105x65 cm",46.67,175.0,105.0,16.0,65.0,False,Yes,https://www.ikea.com/sa/en/p/micke-add-on-unit-high-white-90180025/
 20400276,TRULSTORP,Tables & desks,Coffee table,"Coffee table, 115x70 cm",172.0,645.0,70.0,70.0,40.0,True,No,https://www.ikea.com/sa/en/p/trulstorp-coffee-table-white-20400276/
 89217505,LINNMON / ALEX,Tables & desks,Table,"Table, 150x75 cm",146.67,550.0,75.0,75.0,73.0,True,No,https://www.ikea.com/sa/en/p/linnmon-alex-table-white-white-stained-oak-effect-white-s89217505/
 80217524,BJURSTA,Tables & desks,Wall-mounted drop-leaf table,"Wall-mounted drop-leaf table, 90x50 cm",60.0,225.0,90.0,50.0,,False,No,https://www.ikea.com/sa/en/p/bjursta-wall-mounted-drop-leaf-table-brown-black-80217524/
@@ -1810,7 +1755,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 79335552,LINNMON / ALEX,Tables & desks,Table,"Table, 150x75 cm",146.67,550.0,75.0,75.0,74.0,True,Yes,https://www.ikea.com/sa/en/p/linnmon-alex-table-green-white-s79335552/
 99222257,LINNMON / ALVARET,Tables & desks,Table,"Table, 120x60 cm",124.0,465.0,60.0,60.0,74.0,True,No,https://www.ikea.com/sa/en/p/linnmon-alvaret-table-white-grey-s99222257/
 99229937,LINNMON / TORSKLINT,Tables & desks,Table,"Table, 120x60 cm",129.33,485.0,60.0,60.0,74.0,True,No,https://www.ikea.com/sa/en/p/linnmon-torsklint-table-white-light-grey-s99229937/
-471222,VESKEN,Trolleys,Trolley,"Trolley, 54x18x71 cm",10.4,39.0,54.0,18.0,71.0,False,Yes,https://www.ikea.com/sa/en/p/vesken-trolley-white-00471222/
 70243873,HORNAVAN,Trolleys,Trolley,"Trolley, 26x48x77 cm",52.0,195.0,48.0,48.0,77.0,True,No,https://www.ikea.com/sa/en/p/hornavan-trolley-white-70243873/
 20399777,NISSAFORS,Trolleys,Trolley,"Trolley, 50.5x30x83 cm",26.4,99.0,30.0,30.0,83.0,True,No,https://www.ikea.com/sa/en/p/nissafors-trolley-black-20399777/
 20463056,RÅSHULT,Trolleys,Trolley,"Trolley, 38x28 cm",33.33,125.0,28.0,28.0,65.0,True,No,https://www.ikea.com/sa/en/p/rashult-trolley-white-20463056/
@@ -1886,7 +1830,6 @@ item_id,name,category,product_type,description,price_usd,price_sar,width_cm,dept
 79205536,BESTÅ,TV & media furniture,Storage combination with doors,"Storage combination with doors, 120x40x192 cm",288.27,1081.0,120.0,40.0,192.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-with-doors-white-lappviken-light-grey-s79205536/
 99285004,BESTÅ,TV & media furniture,Cabinet unit,"Cabinet unit, 60x40x202 cm",112.0,420.0,60.0,40.0,202.0,False,Yes,https://www.ikea.com/sa/en/p/besta-cabinet-unit-grey-stained-walnut-effect-s99285004/
 39301785,BESTÅ,TV & media furniture,Storage combination w doors/drawers,"Storage combination w doors/drawers, 120x42x240 cm",445.33,1670.0,120.0,42.0,240.0,False,Yes,https://www.ikea.com/sa/en/p/besta-storage-combination-w-doors-drawers-grey-stained-walnut-effect-lappviken-stubbarp-grey-stained-walnut-eff-clear-glass-s39301785/
-50347517,ENERYDA,TV & media furniture,Cup handle,"Cup handle, 89 mm",9.33,35.0,22.0,30.0,,False,Yes,https://www.ikea.com/sa/en/p/eneryda-cup-handle-black-50347517/
 89301127,BESTÅ,TV & media furniture,Storage combination w glass doors,"Storage combination w glass doors, 60x42x193 cm",306.67,1150.0,60.0,42.0,193.0,False,No,https://www.ikea.com/sa/en/p/besta-storage-combination-w-glass-doors-grey-stained-walnut-effect-selsviken-high-gloss-white-frosted-glass-s89301127/
 30247415,BESTÅ,TV & media furniture,Frame,"Frame, 60x20x64 cm",29.33,110.0,60.0,20.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/besta-frame-grey-stained-walnut-effect-30247415/
 40299890,BESTÅ,TV & media furniture,TV bench,"TV bench, 120x40x64 cm",126.67,475.0,120.0,40.0,64.0,False,Yes,https://www.ikea.com/sa/en/p/besta-tv-bench-white-40299890/

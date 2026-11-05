@@ -17,10 +17,16 @@ PART_WORDS = [
     "hinge", "rail", "plinth", "panel", "insert", "divider for", "box",
     "basket", "hook", "lock", "connecting fitting", "wall upright",
     "inner cushion", "storage bag", "padded seat cover", "laptop support",
+    "lid", "connector", "bracket", "pull-out rail", "suspension rail",
+    "wall shelf", "tablet stand",
 ]
 # Rule B: the product type ENDS with one of these ("Glass door", "Chair cushion"),
 # unless it says "with"/"w" ("Wardrobe with 2 doors" is a wardrobe, keep it).
-PART_ENDINGS = ["door", "cushion", "pad", "cover", "top", "panel"]
+PART_ENDINGS = ["door", "cushion", "pad", "cover", "top", "panel", "basket", "rail", "shelf", "handle"]
+
+# Rule C: anything with a side under 20 cm is too small to matter on the floor plan
+# (the agents' grid uses 30 cm squares).
+MIN_SIDE_CM = 20
 
 df = pd.read_csv("datasets/ikea_new_w_prices.csv")
 print("Start:", len(df), "rows")
@@ -74,8 +80,10 @@ starts_with_part = df["product_type"].str.contains(starts_pattern, case=False, r
 ends_with_part = df["product_type"].str.contains(ends_pattern, case=False, regex=True)
 says_with = df["product_type"].str.contains(r"\b(?:with|w)\b", case=False, regex=True)
 is_part = starts_with_part | (ends_with_part & ~says_with)  # | means "or", & means "and"
-print("Removing", is_part.sum(), "parts/accessories")
-df = df[~is_part]  # ~ means "not", so keep the rows that are NOT parts
+too_small = (df["width"] < MIN_SIDE_CM) | (df["depth"] < MIN_SIDE_CM)
+remove = is_part | too_small
+print(f"Removing {remove.sum()} parts/accessories ({too_small.sum()} of them too small)")
+df = df[~remove]  # ~ means "not", so keep the rows we are NOT removing
 
 # --- Step 7: convert price to US dollars -----------------------------------
 df = df.rename(columns={"price": "price_sar"})

@@ -1,0 +1,7 @@
+torch
+torchrl
+tensordict
+stable-baselines3
+supersuit
+benchmarl
+ultralytics

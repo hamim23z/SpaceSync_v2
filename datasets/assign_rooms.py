@@ -1,7 +1,7 @@
 # Lesson 3: decide which room(s) each item belongs in.
 # Run from the project folder (after clean_catalog.py):  python datasets/assign_rooms.py
 # Input:  datasets/catalog_clean.csv
-# Output: datasets/catalog.csv  (one row per item per room)
+# Output: datasets/catalog_full.csv  (one row per item per room)
 
 import re
 import pandas as pd
@@ -70,8 +70,8 @@ df = df.explode("room").dropna(subset=["room"])
 
 # Put the room column first, it's what everyone will filter by.
 df = df[["room"] + [c for c in df.columns if c != "room"]]
-df.to_csv("datasets/catalog.csv", index=False)
+df.to_csv("datasets/catalog_full.csv", index=False)
 
-print(f"Saved {len(df)} rows ({df['item_id'].nunique()} unique items) to datasets/catalog.csv")
+print(f"Saved {len(df)} rows ({df['item_id'].nunique()} unique items) to datasets/catalog_full.csv")
 print("\nItems per room:")
 print(df["room"].value_counts())

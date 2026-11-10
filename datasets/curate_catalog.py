@@ -1,6 +1,6 @@
 # Lesson 4: "less is more". Pick a small, good set of options for each room.
 # Run from the project folder (after assign_rooms.py):  python datasets/curate_catalog.py
-# Input:  datasets/catalog.csv          (everything, ~2,500 rows)
+# Input:  datasets/catalog_full.csv          (everything, ~2,500 rows)
 # Output: datasets/catalog_curated.csv  (a few options per furniture slot)
 
 import pandas as pd
@@ -77,7 +77,7 @@ def pick_options(items):
     return pd.concat(picks)
 
 
-df = pd.read_csv("datasets/catalog.csv")
+df = pd.read_csv("datasets/catalog_full.csv")
 
 # The same product in different colors shows up as separate rows
 # (same name, same product type). Keep only the cheapest version of each.

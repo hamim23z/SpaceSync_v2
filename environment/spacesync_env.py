@@ -14,15 +14,15 @@ DEFAULT_REWARDS = dict(
     style_w=1.0,
     style_invalid_pen=1.0,
     
-    block_pen=0.3, # vetoed an item the user could afford
-    veto_bonus=0.3, # vetoed an item that would have gone over budget
-    ok_buy_bonus=0.2, # bought something and stayed under budget
-    overspend_flat=1.0, # flat hit as soon as spend > budget
-    overspend_pen=3.0, # extra hit scaled by how far over
+    block_pen=0.3,
+    veto_bonus=0.3,
+    ok_buy_bonus=0.2,
+    overspend_flat=1.0,
+    overspend_pen=3.0,
     
-    area_w=10.0, # reward = area_w * (cells placed / room cells)
-    collision_pen=2.0, # out of bounds, overlap, or door
-    walkway_pen=3.0, # scaled by fraction of free floor cut off from the door
+    area_w=10.0,
+    collision_pen=2.0,
+    walkway_pen=3.0,
     
     team_w=0.5,
     team_place=1.0,
@@ -34,7 +34,6 @@ DEFAULT_REWARDS = dict(
     style_end_w=2.0,
     under_budget_bonus=2.0,
 )
-
 
 class SpaceSyncEnv(ParallelEnv):
     metadata = {"name": "spacesync_v2", "render_modes": ["human", "ansi"], "is_parallelizable": True}
@@ -50,11 +49,15 @@ class SpaceSyncEnv(ParallelEnv):
         cell_cm=30,
         randomize_user=True,
         reward_cfg=None,
+        mask_items=False,
+        standing_cap=False,
         render_mode=None,
         seed=None,
     ):
         super().__init__()
         self.render_mode = render_mode
+        self.standing_cap = bool(standing_cap)
+        self.mask_items = bool(mask_items)
         self.R = int(room_size)
         self.budget_base = float(budget)
         self.target_items = int(target_items)
@@ -71,7 +74,7 @@ class SpaceSyncEnv(ParallelEnv):
             raise ValueError("Catalog needs at least 2 items")
         self.catalog = df
         self.K = int(shortlist_size)
-        max_cells = max(1, self.R // 2)  # so an item always fits in either rotation
+        max_cells = max(1, self.R // 2)
         self._w = np.clip(np.rint(df["width_cm"].to_numpy() / cell_cm), 1, max_cells).astype(int)
         self._h = np.clip(np.rint(df["depth_cm"].to_numpy() / cell_cm), 1, max_cells).astype(int)
         self._price = df["price_usd"].to_numpy(dtype=np.float64)
@@ -79,7 +82,6 @@ class SpaceSyncEnv(ParallelEnv):
         for i, tag in enumerate(df["style_tag"]):
             self._style[i, STYLES.index(tag)] = 1.0
 
-        # door sits at the bottom middle; the two cells in front of it stay free
         self.door = (self.R - 1, self.R // 2)
         self.door_cells = [self.door, (self.R - 2, self.R // 2)]
 
@@ -88,9 +90,7 @@ class SpaceSyncEnv(ParallelEnv):
 
         self.reset(seed=seed)
         obs = self._observations()
-        self._obs_spaces = {
-            a: spaces.Box(-1.0, 1.0, shape=obs[a].shape, dtype=np.float32) for a in self.possible_agents
-        }
+        self._obs_spaces = {a: spaces.Box(-1.0, 1.0, shape=obs[a].shape, dtype=np.float32) for a in self.possible_agents}
         self.state_space = spaces.Box(-1.0, 1.0, shape=self.state().shape, dtype=np.float32)
         self._act_spaces = {
             STYLE_AGENT: spaces.Discrete(self.K),
@@ -111,7 +111,7 @@ class SpaceSyncEnv(ParallelEnv):
         options = options or {}
 
         self.agents = list(self.possible_agents)
-        self.room = np.zeros((self.R, self.R), dtype=np.float32)  # 1 = furniture
+        self.room = np.zeros((self.R, self.R), dtype=np.float32)
 
         n_real = min(self.K, len(self.catalog))
         pad = self.K - n_real
@@ -143,6 +143,7 @@ class SpaceSyncEnv(ParallelEnv):
         self.c_sim = np.where(is_real, sim_all, 0.0)
 
         self.spend = 0.0
+        self.standing_tier = self.T - 1
         self.round = 0
         self.placed = 0
         self.placed_sims = []
@@ -159,7 +160,6 @@ class SpaceSyncEnv(ParallelEnv):
         R = self.R
         own = {a: 0.0 for a in self.possible_agents}
         team = 0.0
-
         k = int(actions.get(STYLE_AGENT, 0))
         tier = int(actions.get(BUDGET_AGENT, 0))
         lay = int(actions.get(LAYOUT_AGENT, 0))
@@ -168,6 +168,13 @@ class SpaceSyncEnv(ParallelEnv):
 
         self.round += 1
         purchased = False
+
+        #new masking strategy im trying to fix agents from always purchasing low end items and then ruining the entire round
+        if self.mask_items and not self.available[k] and self.available.any():
+            own[STYLE_AGENT] -= cfg["style_invalid_pen"]
+            self.invalid_items += 1
+            free = np.flatnonzero(self.available)
+            k = int(free[np.argmin((free - k) % self.K)])
 
         if not self.available[k]:
             own[STYLE_AGENT] -= cfg["style_invalid_pen"]
@@ -181,7 +188,8 @@ class SpaceSyncEnv(ParallelEnv):
 
             own[STYLE_AGENT] += cfg["style_w"] * sim
 
-            approved = price <= self.cap_fracs[tier] * self.budget
+            cap_tier = self.standing_tier if self.standing_cap else tier
+            approved = price <= self.cap_fracs[cap_tier] * self.budget
             affordable = self.spend + price <= self.budget
             problem = self._check_placement(x, y, w, h)
 
@@ -207,6 +215,7 @@ class SpaceSyncEnv(ParallelEnv):
                     own[BUDGET_AGENT] -= cfg["overspend_flat"] + cfg["overspend_pen"] * over
                 else:
                     own[BUDGET_AGENT] += cfg["ok_buy_bonus"]
+                    
                 team += cfg["team_place"]
                 row = self.catalog.iloc[int(self.shortlist[k])]
                 self.layout_log.append(
@@ -239,6 +248,9 @@ class SpaceSyncEnv(ParallelEnv):
 
         rewards = {a: own[a] + cfg["team_w"] * team for a in self.possible_agents}
 
+        if self.standing_cap:
+            self.standing_tier = tier
+
         obs = self._observations()
         terminations = {a: terminated for a in self.possible_agents}
         truncations = {a: truncated for a in self.possible_agents}
@@ -269,40 +281,43 @@ class SpaceSyncEnv(ParallelEnv):
             util=float(self.room.mean()),
             reach=self._reach_frac(),
             scale=float(np.clip(self.budget / self.budget_base, 0.0, 2.0) / 2.0),
+            cap=float(self.cap_fracs[self.standing_tier]),
         )
 
     def _grid(self):
         g = self.room.copy()
         for (r, c) in self.door_cells:
             if g[r, c] == 0:
-                g[r, c] = 0.5  # door zone, visible to the layout agent
+                g[r, c] = 0.5
         return g.ravel()
 
     def _observations(self):
         avail, sim, pn, w, h = self._candidate_arrays()
         s = self._scalars()
+        cap = [s["cap"]] if self.standing_cap else []
         style_obs = np.concatenate(
             [self.user_vec.astype(np.float32), np.stack([avail, sim, pn, w, h], 1).ravel(),
-             [s["t"], s["items"], s["left"]]]
+             [s["t"], s["items"], s["left"]], cap]
         )
         budget_obs = np.concatenate(
             [np.stack([avail, pn], 1).ravel(),
-             [s["left"], s["spent"], s["scale"], s["t"], s["items"], s["util"]]]
+             [s["left"], s["spent"], s["scale"], s["t"], s["items"], s["util"]], cap]
         )
         layout_obs = np.concatenate(
             [self._grid(), np.stack([avail, w, h], 1).ravel(),
-             [s["t"], s["items"], s["util"], s["reach"]]]
+             [s["t"], s["items"], s["util"], s["reach"]], cap]
         )
         obs = {STYLE_AGENT: style_obs, BUDGET_AGENT: budget_obs, LAYOUT_AGENT: layout_obs}
         return {a: np.asarray(v, dtype=np.float32) for a, v in obs.items()}
 
     def state(self):
-        """Global state for MAPPO's centralized critic (and the single-agent baseline)."""
+        #state for mappo
         avail, sim, pn, w, h = self._candidate_arrays()
         s = self._scalars()
         st = np.concatenate(
             [self._grid(), self.user_vec.astype(np.float32), np.stack([avail, sim, pn, w, h], 1).ravel(),
-             [s["t"], s["items"], s["left"], s["util"], s["reach"], s["scale"]]]
+             [s["t"], s["items"], s["left"], s["util"], s["reach"], s["scale"]],
+             [s["cap"]] if self.standing_cap else []]
         )
         return np.asarray(st, dtype=np.float32)
 
@@ -317,7 +332,6 @@ class SpaceSyncEnv(ParallelEnv):
         return "ok"
 
     def _reach_frac(self):
-        """Fraction of free floor cells you can walk to from the door (4-connected)."""
         free = self.room == 0
         total = int(free.sum())
         if total == 0:
@@ -337,7 +351,6 @@ class SpaceSyncEnv(ParallelEnv):
         return count / total
 
     def episode_metrics(self):
-        """The benchmark metrics. Every method (random, generalist, IPPO, MAPPO) is scored with these."""
         lo, hi = self.cfg["util_band"]
         util = float(self.room.mean())
         rounds = max(self.round, 1)
@@ -345,8 +358,10 @@ class SpaceSyncEnv(ParallelEnv):
             items_placed=float(self.placed),
             utilization=util,
             util_in_band=float(lo <= util <= hi),
-            collision_rate=self.collisions / rounds, # illegal placement attempts per round
-            empty_round_rate=self.empty_rounds / rounds, # rounds that placed nothing
+            collision_rate=self.collisions / rounds,
+            empty_round_rate=self.empty_rounds / rounds,
+            veto_rate=self.vetoes / rounds,
+            invalid_pick_rate=self.invalid_items / rounds,
             walkway_connectivity=self._reach_frac(),
             style_similarity=float(np.mean(self.placed_sims)) if self.placed_sims else 0.0,
             spend_usd=float(self.spend),
@@ -357,7 +372,6 @@ class SpaceSyncEnv(ParallelEnv):
         )
 
     def get_layout(self):
-        """The proposed layout: position and rotation of each placed piece."""
         return list(self.layout_log)
 
     def render(self):

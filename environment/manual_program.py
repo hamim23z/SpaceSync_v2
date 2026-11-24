@@ -9,14 +9,13 @@ if str(HERE) not in sys.path:
 
 import numpy as np
 import pandas as pd
-
 from catalog import load_catalog, split_catalog
 from spacesync_env import BUDGET_AGENT, LAYOUT_AGENT, STYLE_AGENT, SpaceSyncEnv
-
+from spacesync_seq_env import SpaceSyncSeqEnv
 warnings.simplefilter("ignore")
 
 METRICS = [
-    "items_placed", "utilization", "util_in_band", "collision_rate", "empty_round_rate","veto_rate", "invalid_pick_rate", "walkway_connectivity", "style_similarity", "under_budget", "budget_used_frac"
+    "items_placed", "utilization", "util_in_band", "collision_rate", "empty_round_rate", "veto_rate", "invalid_pick_rate", "walkway_connectivity", "style_similarity", "under_budget", "budget_used_frac"
     ]
 
 
@@ -28,7 +27,7 @@ def heuristic_action(env, mode):
     idx = np.flatnonzero(ok)
     if mode == "cheapest":
         idx = sorted(idx, key=lambda k: env.c_price[k])
-    else:
+    else:  # style
         idx = sorted(idx, key=lambda k: (-env.c_sim[k], env.c_price[k]))
 
     for k in idx:
@@ -41,6 +40,37 @@ def heuristic_action(env, mode):
                     if env._check_placement(x, y, ww, hh) == "ok":
                         return {STYLE_AGENT: int(k), BUDGET_AGENT: tier, LAYOUT_AGENT: rot * R * R + x * R + y}
     return {STYLE_AGENT: 0, BUDGET_AGENT: 0, LAYOUT_AGENT: 0}
+
+
+def _rank(env, idx, mode):
+    if mode == "cheapest":
+        return sorted(idx, key=lambda k: env.c_price[k])
+    return sorted(idx, key=lambda k: (-env.c_sim[k], env.c_price[k]))
+
+
+def heuristic_seq_action(env, mode):
+    R = env.R
+    acts = {STYLE_AGENT: 0, BUDGET_AGENT: 0, LAYOUT_AGENT: 0}
+    if env.phase == 0:
+        idx = _rank(env, np.flatnonzero(env.cand), mode)
+        if idx:
+            left = env.budget - env.spend
+            ok = np.flatnonzero(env.c_price[idx[0]] <= env.cap_fracs * left + 1e-9)
+            acts[BUDGET_AGENT] = int(ok[0]) if len(ok) else env.T - 1
+    elif env.phase == 1:
+        idx = _rank(env, np.flatnonzero(env.valid), mode)
+        if idx:
+            acts[STYLE_AGENT] = int(idx[0])
+    else:
+        k = env.pick
+        w, h = int(env.c_w[k]), int(env.c_h[k])
+        for rot in (0, 1):
+            spots = np.argwhere(env._legal_map(*((h, w) if rot else (w, h))))
+            if len(spots):
+                x, y = int(spots[0][0]), int(spots[0][1])
+                acts[LAYOUT_AGENT] = rot * R * R + x * R + y
+                break
+    return acts
 
 def random_action(env, rng):
     R = env.R
@@ -72,8 +102,9 @@ def main():
     ap.add_argument("--test-frac", type=float, default=0.2)
     ap.add_argument("--budget", type=float, default=2000.0)
     ap.add_argument("--room-size", type=int, default=15)
-    ap.add_argument("--mask-items", action="store_true", help="swap an already-bought pick for the next available item")
+    ap.add_argument("--mask-items", action="store_true", help="swap an already bought item for the next item")
     ap.add_argument("--standing-cap", action="store_true", help="price limit is shared and visible to all agents")
+    ap.add_argument("--sequential", action="store_true", help="turn-based game: budget, then style, then layout")
     ap.add_argument("--collision-pen", type=float, default=2.0)
     ap.add_argument("--empty-pen", type=float, default=0.5)
     args = ap.parse_args()
@@ -94,13 +125,17 @@ def main():
     rng = np.random.default_rng(123)
     seed0 = 50_000
     cols = METRICS + ["return"]
+    env_cls = SpaceSyncSeqEnv if args.sequential else SpaceSyncEnv
+    act = heuristic_seq_action if args.sequential else heuristic_action
+    if args.sequential:
+        print("TURN-BASED game (budget -> style -> layout). 'return' is not comparable with the old game.")
 
     for label, df in (("HELD-OUT items", test_df), ("TRAIN items", train_df)):
-        env = SpaceSyncEnv(df, seed=1, **kwargs)
+        env = env_cls(df, seed=1, **kwargs)
         res = {
             "random": run(env, lambda e: random_action(e, rng), args.episodes, seed0),
-            "heuristic cheapest": run(env, lambda e: heuristic_action(e, "cheapest"), args.episodes, seed0),
-            "heuristic style": run(env, lambda e: heuristic_action(e, "style"), args.episodes, seed0),
+            "heuristic cheapest": run(env, lambda e: act(e, "cheapest"), args.episodes, seed0),
+            "heuristic style": run(env, lambda e: act(e, "style"), args.episodes, seed0),
         }
         print(f"\n{label}, {args.episodes} episodes each")
         print(pd.DataFrame({k: v[cols].mean() for k, v in res.items()}).round(3).to_string())

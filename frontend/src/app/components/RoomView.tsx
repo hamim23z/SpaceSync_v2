@@ -69,6 +69,11 @@ export default function RoomView() {
             Demo data: the trained agents aren’t connected yet
           </span>
         )}
+        {layout?.source === "api" && layout.engine === "rules" && (
+          <span className="rounded-full border border-amber-500/40 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-700 dark:text-amber-300">
+            Real catalog, hand-coded rules: the trained agents aren’t connected yet
+          </span>
+        )}
       </div>
 
       {/* 3D room + the "..." filter menu from the sketch */}
@@ -182,7 +187,7 @@ export default function RoomView() {
       {layout && (
         <section className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,320px)_1fr]">
           <div>
-            <h2 className="mb-3 text-lg font-semibold">How each agent scored it</h2>
+            <h2 className="mb-3 text-lg font-semibold">{layout.engine === "rules" ? "How the layout scored" : "How each agent scored it"}</h2>
             <AgentScores layout={layout} />
           </div>
           <div>

@@ -1,4 +1,3 @@
-#no model no training here, i wrote this bc i needed to see what was wrong with the model and how it places items
 import argparse
 import sys
 import warnings
@@ -17,7 +16,7 @@ from spacesync_env import BUDGET_AGENT, LAYOUT_AGENT, STYLE_AGENT, SpaceSyncEnv
 warnings.simplefilter("ignore")
 
 METRICS = [
-    "items_placed", "utilization", "util_in_band", "collision_rate", "empty_round_rate", "style_similarity", "under_budget", "budget_used_frac"
+    "items_placed", "utilization", "util_in_band", "collision_rate", "empty_round_rate","veto_rate", "invalid_pick_rate", "walkway_connectivity", "style_similarity", "under_budget", "budget_used_frac"
     ]
 
 
@@ -33,7 +32,7 @@ def heuristic_action(env, mode):
         idx = sorted(idx, key=lambda k: (-env.c_sim[k], env.c_price[k]))
 
     for k in idx:
-        tier = int(np.flatnonzero(env.c_price[k] <= env.cap_fracs * env.budget)[0])
+        tier = env.T - 1 if env.standing_cap else int(np.flatnonzero(env.c_price[k] <= env.cap_fracs * env.budget)[0])
         w, h = int(env.c_w[k]), int(env.c_h[k])
         for rot in (0, 1):
             ww, hh = (h, w) if rot else (w, h)
@@ -43,7 +42,6 @@ def heuristic_action(env, mode):
                         return {STYLE_AGENT: int(k), BUDGET_AGENT: tier, LAYOUT_AGENT: rot * R * R + x * R + y}
     return {STYLE_AGENT: 0, BUDGET_AGENT: 0, LAYOUT_AGENT: 0}
 
-
 def random_action(env, rng):
     R = env.R
     return {
@@ -51,7 +49,6 @@ def random_action(env, rng):
         BUDGET_AGENT: int(rng.integers(env.T)),
         LAYOUT_AGENT: int(rng.integers(2 * R * R)),
     }
-
 
 def run(env, policy, n_episodes, seed0):
     rows = []
@@ -67,7 +64,6 @@ def run(env, policy, n_episodes, seed0):
         rows.append(row)
     return pd.DataFrame(rows)
 
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--room-type", default="Living Room")
@@ -76,6 +72,8 @@ def main():
     ap.add_argument("--test-frac", type=float, default=0.2)
     ap.add_argument("--budget", type=float, default=2000.0)
     ap.add_argument("--room-size", type=int, default=15)
+    ap.add_argument("--mask-items", action="store_true", help="swap an already-bought pick for the next available item")
+    ap.add_argument("--standing-cap", action="store_true", help="price limit is shared and visible to all agents")
     ap.add_argument("--collision-pen", type=float, default=2.0)
     ap.add_argument("--empty-pen", type=float, default=0.5)
     args = ap.parse_args()
@@ -90,6 +88,8 @@ def main():
         budget=args.budget,
         room_size=args.room_size,
         reward_cfg=dict(collision_pen=args.collision_pen, empty_pen=args.empty_pen),
+        mask_items=args.mask_items,
+        standing_cap=args.standing_cap,
     )
     rng = np.random.default_rng(123)
     seed0 = 50_000

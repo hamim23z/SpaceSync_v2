@@ -9,3 +9,8 @@ __pycache__/
 
 #dataset because it is too big
 /datasets/IKEA-Dataset-master/
+
+#training
+environment/ippo_*/
+environment/mappo_*/
+environment/ppo_room10_*.zip

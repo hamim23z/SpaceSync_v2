@@ -54,7 +54,7 @@ ROOM_SLOTS = {
     },
 }
 
-PER_TIER = 2  # options per price tier -> up to 6 per slot (2 budget, 2 mid, 2 premium)
+PER_TIER = 3  # options per price tier -> up to 6 per slot (2 budget, 2 mid, 2 premium)
 
 
 def pick_options(items):

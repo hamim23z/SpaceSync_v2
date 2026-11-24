@@ -1,0 +1,385 @@
+======================================================================
+A. MAIN RESULTS: 10x10 room, default rewards (collision_pen=2.0, empty_pen=0.5)
+======================================================================
+
+A1. Random and scripted heuristic (heuristic_baseline.py --room-size 10)
+
+HELD-OUT items, 200 episodes each
+                      random  heuristic cheapest  heuristic style
+items_placed           2.835               5.000            4.985
+utilization            0.168               0.290            0.327
+util_in_band           0.185               1.000            0.890
+collision_rate         0.367               0.000            0.003
+empty_round_rate       0.763               0.000            0.010
+walkway_connectivity   0.994               0.966            0.970
+style_similarity       0.362               0.357            0.421
+under_budget           1.000               1.000            1.000
+budget_used_frac       0.290               0.471            0.538
+return                -1.836               7.084            7.200
+
+TRAIN items, 200 episodes each
+                      random  heuristic cheapest  heuristic style
+items_placed           3.565               5.000            5.000
+utilization            0.167               0.215            0.251
+util_in_band           0.120               0.275            0.455
+collision_rate         0.390               0.000            0.000
+empty_round_rate       0.681               0.000            0.000
+walkway_connectivity   0.998               0.997            0.998
+style_similarity       0.334               0.344            0.459
+under_budget           1.000               1.000            1.000
+budget_used_frac       0.267               0.280            0.387
+return                -0.926               6.082            6.749
+
+A2. Single generalist PPO (train_single_ppo.py --timesteps 200000 --room-size 10, saved as ppo_room10)
+
+200 episodes each, train seed 0. First three columns: HELD-OUT items. Last column: TRAIN items.
+                      random  PPO greedy  PPO sampled  PPO greedy (train items)
+items_placed           2.865       0.640        2.210                     0.805
+utilization            0.170       0.030        0.133                     0.031
+util_in_band           0.175       0.005        0.080                     0.000
+collision_rate         0.374       0.008        0.123                     0.016
+empty_round_rate       0.760       0.947        0.816                     0.933
+walkway_connectivity   0.990       1.000        0.996                     0.999
+style_similarity       0.340       0.345        0.433                     0.338
+under_budget           1.000       1.000        1.000                     1.000
+budget_used_frac       0.287       0.053        0.229                     0.033
+return                -1.808      -2.964       -1.544                    -2.432
+
+A3. Why the generalist wastes rounds (diagnose_ppo.py --model ppo_room10 --room-size 10)
+
+greedy: 2400 rounds over 200 held-out episodes
+  bought                5.3%
+  unavailable item     52.5%
+  vetoed by tier       41.4%
+  illegal placement     0.8%
+  price tiers chosen: tier 0 (10%): 90%, tier 1 (20%): 5%, tier 2 (35%): 3%, tier 3 (60%): 1%
+
+sampled: 2399 rounds over 200 held-out episodes
+  bought               19.7%
+  unavailable item     49.9%
+  vetoed by tier       21.6%
+  illegal placement     8.8%
+  price tiers chosen: tier 0 (10%): 40%, tier 1 (20%): 20%, tier 2 (35%): 22%, tier 3 (60%): 18%
+
+A4. IPPO (train_benchmarl.py --algo ippo --timesteps 200000 --room-size 10)
+
+HELD-OUT items, 200 episodes, train seed 0, room 10x10
+                      IPPO greedy  IPPO sampled
+items_placed                1.550         1.825
+utilization                 0.119         0.139
+util_in_band                0.105         0.135
+collision_rate              0.065         0.108
+empty_round_rate            0.868         0.848
+walkway_connectivity        0.993         0.992
+style_similarity            0.350         0.406
+under_budget                1.000         1.000
+budget_used_frac            0.194         0.226
+return                      0.202         0.405
+
+A5. MAPPO (train_benchmarl.py --algo mappo --timesteps 200000 --room-size 10)
+
+HELD-OUT items, 200 episodes, train seed 0, room 10x10
+                      MAPPO greedy  MAPPO sampled
+items_placed                 1.350          1.770
+utilization                  0.094          0.127
+util_in_band                 0.045          0.130
+collision_rate               0.023          0.058
+empty_round_rate             0.882          0.846
+walkway_connectivity         1.000          0.997
+style_similarity             0.457          0.476
+under_budget                 1.000          1.000
+budget_used_frac             0.149          0.207
+return                       0.420          0.734
+
+======================================================================
+B. EARLIER ATTEMPTS: 15x15 room (documented first attempts, not the main results)
+======================================================================
+
+B1. Heuristic, default rewards (heuristic_baseline.py)
+
+HELD-OUT items, 200 episodes each
+                      random  heuristic cheapest  heuristic style
+items_placed           3.375               5.000            4.985
+utilization            0.109               0.138            0.158
+util_in_band           0.000               0.000            0.110
+collision_rate         0.278               0.000            0.003
+empty_round_rate       0.708               0.000            0.010
+walkway_connectivity   1.000               1.000            1.000
+style_similarity       0.345               0.357            0.421
+under_budget           1.000               1.000            1.000
+budget_used_frac       0.362               0.471            0.538
+return                -1.106               5.459            5.748
+
+B2. Single generalist PPO, default rewards, 200k steps (ppo_living_room_s0)
+
+HELD-OUT items, 200 episodes, train seed 0
+                  random  generalist PPO
+items_placed       3.330           0.625
+utilization        0.102           0.012
+util_in_band       0.000           0.000
+collision_rate     0.280           0.048
+empty_round_rate   0.715           0.948
+style_similarity   0.357           0.472
+under_budget       1.000           1.000
+budget_used_frac   0.341           0.049
+return            -1.240          -2.358
+
+B3. Single generalist PPO, tuned rewards (collision_pen=0.5, empty_pen=1.0), 200k steps (ppo_tuned)
+
+200 episodes each, train seed 0. First three columns: HELD-OUT items. Last column: TRAIN items.
+                      random  PPO greedy  PPO sampled  PPO greedy (train items)
+items_placed       3.330       0.545        1.995                     0.570
+utilization        0.102       0.010        0.053                     0.009
+util_in_band       0.000       0.000        0.000                     0.000
+collision_rate     0.280       0.416        0.472                     0.499
+empty_round_rate   0.715       0.955        0.834                     0.952
+style_similarity   0.357       0.449        0.444                     0.361
+under_budget       1.000       1.000        1.000                     1.000
+budget_used_frac   0.341       0.042        0.185                     0.022
+return            -1.703      -4.589       -3.153                    -3.855
+
+(Return values in B3 use the tuned reward settings, so don't compare them with B2 or section A.)
+
+======================================================================
+C. AFTER THE ITEM FIX: same 10x10 room, default rewards, with --mask-items (seed 0)
+======================================================================
+The fix: if the style agent picks an item that is already bought, it still gets its
+penalty, but the next available item is used so the round is not wasted. Applied to every
+method. Same setup, same 7 held-out items, same 200 episode seeds as section A.
+
+C1. Hand-coded rules: unchanged by the fix, because they never pick a bought item.
+(Checked at 100 episodes with --mask-items: return 7.085 cheapest / 7.249 style. Section A1, 200 episodes: 7.084 / 7.200.)
+
+C2. Single generalist PPO (train_single_ppo.py --timesteps 200000 --room-size 10 --mask-items --save ppo_room10_mask)
+
+200 episodes each, train seed 0. First three columns: HELD-OUT items. Last column: TRAIN items.
+                      random  PPO greedy  PPO sampled  PPO greedy (train items)
+items_placed           3.465       0.430        1.435                     0.605
+utilization            0.214       0.022        0.068                     0.025
+util_in_band           0.360       0.000        0.005                     0.000
+collision_rate         0.619       0.167        0.419                     0.212
+empty_round_rate       0.698       0.964        0.880                     0.950
+walkway_connectivity   0.991       1.000        0.997                     1.000
+style_similarity       0.364       0.236        0.387                     0.219
+under_budget           1.000       1.000        1.000                     1.000
+budget_used_frac       0.363       0.035        0.121                     0.027
+return                -2.463      -2.820       -3.379                    -2.513
+
+C3. Why the generalist still wastes rounds (diagnose_ppo.py --model ppo_room10_mask --room-size 10 --mask-items)
+
+greedy: 2400 rounds over 200 held-out episodes
+  bought                3.6%
+  unavailable item      0.0%
+  vetoed by tier       90.0%
+  illegal placement     6.4%
+  price tiers chosen: tier 0 (10%): 100%
+
+sampled: 2397 rounds over 200 held-out episodes
+  bought               11.9%
+  unavailable item      0.0%
+  vetoed by tier       77.6%
+  illegal placement    10.5%
+  price tiers chosen: tier 0 (10%): 95%, tier 1 (20%): 2%, tier 2 (35%): 2%, tier 3 (60%): 2%
+
+C4. IPPO (train_benchmarl.py --algo ippo --timesteps 200000 --room-size 10 --mask-items)
+
+HELD-OUT items, 200 episodes, train seed 0, room 10x10
+                      IPPO greedy  IPPO sampled
+items_placed                0.900         1.200
+utilization                 0.060         0.085
+util_in_band                0.000         0.020
+collision_rate              0.047         0.095
+empty_round_rate            0.925         0.900
+walkway_connectivity        1.000         1.000
+style_similarity            0.306         0.391
+under_budget                1.000         1.000
+budget_used_frac            0.091         0.125
+return                     -0.879        -0.632
+
+C5. MAPPO (train_benchmarl.py --algo mappo --timesteps 200000 --room-size 10 --mask-items)
+
+HELD-OUT items, 200 episodes, train seed 0, room 10x10
+                      MAPPO greedy  MAPPO sampled
+items_placed                 1.600          1.895
+utilization                  0.126          0.146
+util_in_band                 0.150          0.195
+collision_rate               0.043          0.070
+empty_round_rate             0.857          0.834
+walkway_connectivity         0.992          0.991
+style_similarity             0.350          0.371
+under_budget                 1.000          1.000
+budget_used_frac             0.203          0.226
+return                       0.495          0.804
+
+C6. Return on held-out items, before (A) and after (C) the item fix
+                      before fix (A)    after fix (C)
+                      greedy  sampled   greedy  sampled
+single PPO            -2.96   -1.54     -2.82   -3.38
+IPPO                   0.20    0.41     -0.88   -0.63
+MAPPO                  0.42    0.73      0.50    0.80
+random                   -1.81 (A2)       -2.46 (C2)
+hand-coded rules         7.08 / 7.20 (A1), unchanged
+One training run per method. IPPO moved by about 1 point between the two setups, so
+differences of that size are within run-to-run noise and need more seeds to confirm.
+
+======================================================================
+D. SHARED PRICE LIMIT: 10x10 room, default rewards, --mask-items --standing-cap (seed 0)
+======================================================================
+The change: the budget agent's choice each round sets the price limit for the NEXT round, the limit
+starts at the highest tier, and every agent sees the current limit in its observation.
+Same 7 held-out items and 200 episode seeds as sections A and C. Two new rows are printed from here on:
+veto_rate = share of rounds where the price limit blocked the picked item,
+invalid_pick_rate = share of rounds where the picked item was already bought (swapped by --mask-items).
+
+D1. Hand-coded rules: not run yet with --standing-cap in full (checked at 60 episodes: return 7.096 cheapest / 7.166 style).
+
+D2. Single generalist PPO (train_single_ppo.py --timesteps 200000 --room-size 10 --mask-items --standing-cap --save ppo_room10_cap)
+
+200 episodes each, train seed 0. First three columns: HELD-OUT items. Last column: TRAIN items.
+                      random  PPO greedy  PPO sampled  PPO greedy (train items)
+items_placed           3.390       0.520        1.995                     0.530
+utilization            0.209       0.030        0.113                     0.023
+util_in_band           0.345       0.000        0.090                     0.000
+collision_rate         0.640       0.410        0.619                     0.364
+empty_round_rate       0.707       0.957        0.834                     0.956
+veto_rate              0.297       0.799        0.571                     0.795
+invalid_pick_rate      0.377       0.036        0.127                     0.005
+walkway_connectivity   0.985       1.000        0.996                     1.000
+style_similarity       0.371       0.221        0.373                     0.214
+under_budget           0.995       1.000        1.000                     1.000
+budget_used_frac       0.360       0.047        0.210                     0.032
+return                -2.831      -4.514       -3.998                    -3.759
+
+D3. IPPO (train_benchmarl.py --algo ippo --timesteps 200000 --room-size 10 --mask-items --standing-cap)
+
+HELD-OUT items, 200 episodes, train seed 0, room 10x10
+                      IPPO greedy  IPPO sampled
+items_placed                1.365         1.595
+utilization                 0.112         0.126
+util_in_band                0.115         0.125
+collision_rate              0.077         0.092
+empty_round_rate            0.880         0.850
+veto_rate                   0.818         0.797
+invalid_pick_rate           0.034         0.045
+walkway_connectivity        0.986         0.980
+style_similarity            0.421         0.416
+under_budget                1.000         1.000
+budget_used_frac            0.210         0.230
+return                     -0.110         0.023
+
+D4. MAPPO (train_benchmarl.py --algo mappo --timesteps 200000 --room-size 10 --mask-items --standing-cap)
+
+HELD-OUT items, 200 episodes, train seed 0, room 10x10
+                      MAPPO greedy  MAPPO sampled
+items_placed                 1.480          1.720
+utilization                 0.118          0.136
+util_in_band                0.090          0.150
+collision_rate              0.074          0.127
+empty_round_rate            0.866          0.847
+veto_rate                   0.822          0.782
+invalid_pick_rate           0.014          0.018
+walkway_connectivity        0.998          0.995
+style_similarity            0.419          0.436
+under_budget                1.000          1.000
+budget_used_frac            0.203          0.232
+return                      0.137          0.190
+
+D5. Return on held-out items across the three versions of the game (greedy / sampled). One run each.
+                      A: original        C: + item fix      D: + shared limit
+single PPO            -2.96 / -1.54      -2.82 / -3.38      -4.51 / -4.00
+IPPO                   0.20 /  0.41      -0.88 / -0.63      -0.11 /  0.02
+MAPPO                  0.42 /  0.73       0.50 /  0.80       0.14 /  0.19
+random                    -1.81              -2.46              -2.83
+hand-coded rules           7.08 / 7.20 in A and C; 7.10 / 7.17 in D (60 episodes)
+In all three versions, MAPPO and IPPO score higher than the single agent, by 2 to 4 points.
+The shared price limit did NOT reduce blocked rounds: veto_rate stays near 0.8 for every learned method.
+
+
+============================================================================
+SECTION E. TURN-BASED GAME (budget -> style -> layout), room 10x10, one run each, train seed 0
+============================================================================
+New environment (spacesync_seq_env.py). Each round is 3 turns, so every agent sees what the earlier one chose.
+Items an agent may pick are limited to ones that are available, affordable, under the budget agent's allowance,
+and that have a legal spot. An illegal pick is swapped for an allowed one (small penalty). No round is ever wasted.
+200,000 training steps each, 200 held-out episodes (seeds 50000+), same held-out items as A to D.
+NOT comparable with A to D: the game and the return are different (return is summed over 3 steps per round).
+Metric meanings here: collision_rate = share of rounds where the spot had to be moved;
+invalid_pick_rate = share where the item had to be swapped; veto_rate = share where the allowance was too low and was raised.
+
+E1. Baselines (heuristic_baseline.py --room-size 10 --sequential), held-out items
+                      random   hand-coded cheapest   hand-coded style
+items_placed           4.875     5.000                 4.975
+utilization            0.349     0.290                 0.328
+util_in_band           0.975     1.000                 0.880
+collision_rate         0.557     0.000                 0.000
+invalid_pick_rate      0.512     0.000                 0.000
+veto_rate              0.055     0.000                 0.000
+walkway_connectivity   0.821     0.966                 0.970
+style_similarity       0.359     0.357                 0.425
+budget_used_frac       0.602     0.471                 0.543
+return                 6.300     7.751                 7.927
+
+E2. Single generalist PPO (train_single_ppo.py --sequential --room-size 10 --timesteps 200000)
+                      PPO greedy  PPO sampled
+items_placed           4.735       4.795
+utilization            0.370       0.361
+util_in_band           0.915       0.900
+collision_rate         0.324       0.379
+empty_round_rate       0.000       0.000
+veto_rate              0.053       0.056
+invalid_pick_rate      0.120       0.222
+walkway_connectivity   0.951       0.945
+style_similarity       0.385       0.373
+under_budget           1.000       1.000
+budget_used_frac       0.728       0.682
+return                 7.324       7.128
+(random in this script: return 6.274)
+
+E3. IPPO (train_benchmarl.py --algo ippo --sequential --room-size 10 --timesteps 200000)
+                      IPPO greedy  IPPO sampled
+items_placed           4.835       4.820
+utilization            0.361       0.364
+util_in_band           0.945       0.950
+collision_rate         0.106       0.113
+empty_round_rate       0.000       0.000
+veto_rate              0.108       0.110
+invalid_pick_rate      0.019       0.026
+walkway_connectivity   0.997       0.993
+style_similarity       0.403       0.400
+under_budget           1.000       1.000
+budget_used_frac       0.697       0.689
+return                 8.043       8.015
+
+E4. MAPPO (train_benchmarl.py --algo mappo --sequential --room-size 10 --timesteps 200000)
+                      MAPPO greedy  MAPPO sampled
+items_placed           4.850       4.860
+utilization            0.386       0.385
+util_in_band           0.910       0.915
+collision_rate         0.109       0.160
+empty_round_rate       0.000       0.000
+veto_rate              0.055       0.053
+invalid_pick_rate      0.005       0.013
+walkway_connectivity   0.973       0.958
+style_similarity       0.413       0.418
+under_budget           1.000       1.000
+budget_used_frac       0.708       0.711
+return                 8.073       8.012
+
+E5. Return on held-out items, turn-based game (greedy / sampled). One run each.
+random                  6.30
+hand-coded cheapest     7.75
+hand-coded style        7.93
+single PPO              7.32 / 7.13
+IPPO                    8.04 / 8.02
+MAPPO                   8.07 / 8.01
+Reading it:
+ - No wasted rounds for any method (empty_round_rate 0.000), so the blocked-purchase failure from A to D is gone.
+ - Three agents beat one agent by about 0.7 to 0.75 points (IPPO and MAPPO 8.0 to 8.1 vs single 7.1 to 7.3).
+ - The single agent still needs its item swapped 12% of the time and its spot moved 32% of the time; IPPO/MAPPO need
+   it about 1 to 2% and 11%. MAPPO and IPPO are about equal (8.04 vs 8.07, within one-run noise).
+ - IPPO and MAPPO score slightly above the hand-coded style rule (8.0 to 8.1 vs 7.93). The hand-coded rule does not
+   try to maximize this reward (it takes the first legal spot), so this is not a claim that learning beats good design.
+   Style match is still a bit lower than the rule (0.40 to 0.41 vs 0.425); the learned agents score higher by using more floor
+   area and keeping walkways clear.
+Limits: one training seed per method; differences under about 0.3 are within what a second seed could change.
+The turn-based game is much easier than the original (random places 4.9 items), so there is less room between random and good.

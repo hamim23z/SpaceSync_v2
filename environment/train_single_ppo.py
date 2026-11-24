@@ -1,4 +1,3 @@
-#training the single agent and comparing it with a random policy on the catalog items.
 import argparse
 import sys
 import warnings
@@ -13,6 +12,7 @@ import pandas as pd
 from stable_baselines3 import PPO
 from catalog import load_catalog, split_catalog
 from environment.single_agent_wrapper import SingleAgentSpaceSync
+from environment.spacesync_seq_env import SingleAgentSeq
 warnings.simplefilter("ignore")
 
 METRICS = [
@@ -44,11 +44,12 @@ def main():
     ap.add_argument("--test-frac", type=float, default=0.2)
     ap.add_argument("--eval-episodes", type=int, default=200)
     ap.add_argument("--budget", type=float, default=2000.0)
-    ap.add_argument("--room-size", type=int, default=15, help="grid is room-size x room-size cells of 30 cm (try 10)")
+    ap.add_argument("--room-size", type=int, default=15, help="grid is room-size x room-size cells of 30 cm")
     ap.add_argument("--collision-pen", type=float, default=2.0, help="penalty for an illegal placement")
     ap.add_argument("--empty-pen", type=float, default=0.5, help="team penalty for a round that places nothing")
     ap.add_argument("--mask-items", action="store_true", help="swap an already bought item for the next item")
     ap.add_argument("--standing-cap", action="store_true", help="price limit is shared and visible to all agents")
+    ap.add_argument("--sequential", action="store_true", help="turn-based game: budget, then style, then layout")
     ap.add_argument("--save", default=None, help="where to save the model (default: ppo_<room>_s<seed>)")
     args = ap.parse_args()
 
@@ -65,9 +66,12 @@ def main():
         mask_items=args.mask_items,
         standing_cap=args.standing_cap,
     )
-    train_env = SingleAgentSpaceSync(train_df, seed=args.seed, **env_kwargs)
-    test_env = SingleAgentSpaceSync(test_df, seed=10_000, **env_kwargs)
-    train_eval_env = SingleAgentSpaceSync(train_df, seed=20_000, **env_kwargs)
+    Wrapper = SingleAgentSeq if args.sequential else SingleAgentSpaceSync
+    if args.sequential:
+        print("TURN-BASED game (budget -> style -> layout)")
+    train_env = Wrapper(train_df, seed=args.seed, **env_kwargs)
+    test_env = Wrapper(test_df, seed=10_000, **env_kwargs)
+    train_eval_env = Wrapper(train_df, seed=20_000, **env_kwargs)
 
     model = PPO("MlpPolicy", train_env, seed=args.seed, verbose=1, device="cpu")
     model.learn(total_timesteps=args.timesteps)

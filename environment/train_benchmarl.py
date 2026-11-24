@@ -1,4 +1,3 @@
-#training the three separate agents with BenchMARL and scoring them on catalog items with the same metrics as the other methods.
 import argparse
 import math
 import sys
@@ -23,6 +22,7 @@ from benchmarl.experiment import Experiment, ExperimentConfig
 from benchmarl.models.mlp import MlpConfig
 from catalog import load_catalog, split_catalog
 from environment.spacesync_env import BUDGET_AGENT, LAYOUT_AGENT, STYLE_AGENT, SpaceSyncEnv
+from environment.spacesync_seq_env import SpaceSyncSeqEnv
 warnings.simplefilter("ignore")
 
 AGENTS = [STYLE_AGENT, BUDGET_AGENT, LAYOUT_AGENT]
@@ -31,17 +31,20 @@ METRICS = [
     ]
 
 class SpaceSyncTask(PettingZooClass):
-    def __init__(self, catalog_df, env_kwargs=None):
+    def __init__(self, catalog_df, env_kwargs=None, sequential=False):
         self.catalog_df = catalog_df
         self.env_kwargs = env_kwargs or {}
-        super().__init__(name="spacesync", config={"max_cycles": self.env_kwargs.get("max_rounds", 12)})
+        self.sequential = sequential
+        rounds = self.env_kwargs.get("max_rounds", 12)
+        super().__init__(name="spacesync", config={"max_cycles": rounds * 3 if sequential else rounds})
 
     def get_env_fun(self, num_envs, continuous_actions, seed, device):
         catalog_df, env_kwargs = self.catalog_df, self.env_kwargs
+        env_cls = SpaceSyncSeqEnv if self.sequential else SpaceSyncEnv
 
         def make():
             return PettingZooWrapper(
-                env=SpaceSyncEnv(catalog_df, seed=seed, **env_kwargs),
+                env=env_cls(catalog_df, seed=seed, **env_kwargs),
                 group_map=MarlGroupMapType.ONE_GROUP_PER_AGENT,
                 categorical_actions=True,
                 return_state=True,
@@ -72,10 +75,9 @@ class SpaceSyncTask(PettingZooClass):
         return "spacesync"
 
 
-def build_experiment(algo, train_df, timesteps, seed, env_kwargs):
-    task = SpaceSyncTask(train_df, env_kwargs)
+def build_experiment(algo, train_df, timesteps, seed, env_kwargs, sequential=False):
+    task = SpaceSyncTask(train_df, env_kwargs, sequential)
     algo_cfg = (MappoConfig if algo == "mappo" else IppoConfig).get_from_yaml()
-
     cfg = ExperimentConfig.get_from_yaml()
     frames_per_batch = 1200
     cfg.sampling_device = "cpu"
@@ -114,9 +116,9 @@ def pick_actions(policy, obs, deterministic=True):
     return {a: int(out[a]["action"].reshape(-1)[0]) for a in AGENTS}
 
 
-def evaluate_on_heldout(experiment, test_df, n_episodes, env_kwargs, deterministic=True, seed0=50_000):
+def evaluate_on_heldout(experiment, test_df, n_episodes, env_kwargs, deterministic=True, seed0=50_000, sequential=False):
     policy = experiment.policy
-    env = SpaceSyncEnv(test_df, seed=10_000, **env_kwargs)
+    env = (SpaceSyncSeqEnv if sequential else SpaceSyncEnv)(test_df, seed=10_000, **env_kwargs)
     rows = []
     for i in range(n_episodes):
         obs, _ = env.reset(seed=seed0 + i)
@@ -142,11 +144,13 @@ def main():
     ap.add_argument("--eval-episodes", type=int, default=200)
     ap.add_argument("--budget", type=float, default=2000.0)
     ap.add_argument("--room-size", type=int, default=15, help="grid is room-size x room-size cells of 30 cm (try 10)")
-    ap.add_argument("--mask-items", action="store_true", help="swap an already bought item for the next item")
+    ap.add_argument("--mask-items", action="store_true", help="swap an alread bought item for the next item")
     ap.add_argument("--standing-cap", action="store_true", help="price limit is shared and visible to all agents")
+    ap.add_argument("--sequential", action="store_true", help="turn-based game: budget, then style, then layout (return is NOT comparable with the old game)")
     ap.add_argument("--collision-pen", type=float, default=2.0)
     ap.add_argument("--empty-pen", type=float, default=0.5)
     args = ap.parse_args()
+
     catalog = load_catalog(args.room_type)
     train_df, test_df = split_catalog(catalog, test_frac=args.test_frac, seed=args.split_seed)
     print(f"{args.room_type}: {len(train_df)} train items, {len(test_df)} held-out items")
@@ -158,13 +162,15 @@ def main():
         mask_items=args.mask_items,
         standing_cap=args.standing_cap,
     )
-    experiment = build_experiment(args.algo, train_df, args.timesteps, args.seed, env_kwargs)
+    if args.sequential:
+        print("TURN-BASED game (budget -> style -> layout)")
+    experiment = build_experiment(args.algo, train_df, args.timesteps, args.seed, env_kwargs, args.sequential)
     experiment.run()
 
     name = args.algo.upper()
     res = {
-        f"{name} greedy": evaluate_on_heldout(experiment, test_df, args.eval_episodes, env_kwargs, deterministic=True),
-        f"{name} sampled": evaluate_on_heldout(experiment, test_df, args.eval_episodes, env_kwargs, deterministic=False),
+        f"{name} greedy": evaluate_on_heldout(experiment, test_df, args.eval_episodes, env_kwargs, deterministic=True, sequential=args.sequential),
+        f"{name} sampled": evaluate_on_heldout(experiment, test_df, args.eval_episodes, env_kwargs, deterministic=False, sequential=args.sequential),
     }
     print(f"\nHELD-OUT items, {args.eval_episodes} episodes, train seed {args.seed}, room {args.room_size}x{args.room_size}")
     print(pd.DataFrame({k: v.mean() for k, v in res.items()}).round(3).to_string())
